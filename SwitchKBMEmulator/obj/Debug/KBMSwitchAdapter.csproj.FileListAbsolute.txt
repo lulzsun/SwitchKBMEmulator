@@ -1,0 +1,10 @@
+C:\Users\QUACHROCKET\source\repos\KBMSwitchAdapter\KBMSwitchAdapter\bin\Debug\KBMSwitchAdapter.exe.config
+C:\Users\QUACHROCKET\source\repos\KBMSwitchAdapter\KBMSwitchAdapter\bin\Debug\KBMSwitchAdapter.exe
+C:\Users\QUACHROCKET\source\repos\KBMSwitchAdapter\KBMSwitchAdapter\bin\Debug\KBMSwitchAdapter.pdb
+C:\Users\QUACHROCKET\source\repos\KBMSwitchAdapter\KBMSwitchAdapter\obj\Debug\KBMSwitchAdapter.csprojAssemblyReference.cache
+C:\Users\QUACHROCKET\source\repos\KBMSwitchAdapter\KBMSwitchAdapter\obj\Debug\KBMSwitchAdapter.Form1.resources
+C:\Users\QUACHROCKET\source\repos\KBMSwitchAdapter\KBMSwitchAdapter\obj\Debug\KBMSwitchAdapter.Properties.Resources.resources
+C:\Users\QUACHROCKET\source\repos\KBMSwitchAdapter\KBMSwitchAdapter\obj\Debug\KBMSwitchAdapter.csproj.GenerateResource.cache
+C:\Users\QUACHROCKET\source\repos\KBMSwitchAdapter\KBMSwitchAdapter\obj\Debug\KBMSwitchAdapter.csproj.CoreCompileInputs.cache
+C:\Users\QUACHROCKET\source\repos\KBMSwitchAdapter\KBMSwitchAdapter\obj\Debug\KBMSwitchAdapter.exe
+C:\Users\QUACHROCKET\source\repos\KBMSwitchAdapter\KBMSwitchAdapter\obj\Debug\KBMSwitchAdapter.pdb
