@@ -37,9 +37,10 @@ namespace KBMSwitchAdapter
         {
             timer1.Start();
             timer2.Start();
-            timer3.Start();
+            //timer3.Start();
         }
 
+        private double sens = 1.5;
         private bool firstTime = true;
         private Point center;
         private Point last;
@@ -47,8 +48,18 @@ namespace KBMSwitchAdapter
         {
             if (!firstTime)
             {
-                var x = (Mouse.Position.X - center.X) + 128;
-                var y = (Mouse.Position.Y - center.Y) + 128;
+                var x = (int)((Mouse.Position.X - center.X)*sens) + 128;
+                var y = (int)((Mouse.Position.Y - center.Y)*sens) + 128; //deadzone is +-20
+
+                //deadzone fix
+                if (y < 149 && !(y >= 128))
+                {
+                    //y -= 148 - y;
+                }
+                else if (y > 107 && !(y <= 128))
+                {
+                    //y += y - 108;
+                }
 
                 if (x > 255)
                 {
@@ -71,7 +82,7 @@ namespace KBMSwitchAdapter
                     y = 0;
                 }
 
-                if(last.X != x)
+                if (last.X != x)
                 {
                     Console.WriteLine(x + ", " + y);
                     sink.Update(InputFrame.ParseInputString("RX=" + x));
@@ -82,6 +93,7 @@ namespace KBMSwitchAdapter
                     Console.WriteLine(x + ", " + y);
                     sink.Update(InputFrame.ParseInputString("RY=" + y));
                 }
+                Mouse.Position = center;
                 last = new Point(x, y);
 
             }
@@ -101,8 +113,6 @@ namespace KBMSwitchAdapter
             firstTime = true;
         }
 
-        bool lx_pressed, ly_pressed;
-
         private Point buffer;
         private void Timer3_Tick(object sender, EventArgs e)
         {
@@ -111,6 +121,8 @@ namespace KBMSwitchAdapter
             buffer = Mouse.Position;
         }
 
+        bool l_left, l_right, l_up, l_down, walk;
+        int walk_modifier = 0;
         private void Timer2_Tick(object sender, EventArgs e)
         {
             //--------------- ZR BUTTON / SHOOT ---------------
@@ -123,7 +135,7 @@ namespace KBMSwitchAdapter
                     Console.WriteLine("ZR");
                 }
             }
-            else if(((Control.MouseButtons & MouseButtons.Left) != MouseButtons.Left) && Controller.ZR.pressed)
+            else if (((Control.MouseButtons & MouseButtons.Left) != MouseButtons.Left) && Controller.ZR.pressed)
             {
                 Controller.ZR.pressed = false;
                 sink.Update(InputFrame.ParseInputString("R=" + Controller.ZR.ID));
@@ -225,52 +237,132 @@ namespace KBMSwitchAdapter
                 sink.Update(InputFrame.ParseInputString("R=" + Controller.R3.ID));
             }
 
-            //--------------- UP/DOWN ---------------
-            if (Keyboard.IsKeyDown(Key.W) || Keyboard.IsKeyDown(Key.S))
+            //--------------- WALK MODIFIER ---------------
+            //if (Keyboard.IsKeyDown(Key.LeftCtrl))
+            //{
+            //    if (!walk)
+            //    {
+            //        walk_modifier = 32;
+
+            //        if (Keyboard.IsKeyDown(Key.W) && l_up)
+            //        {
+            //            sink.Update(InputFrame.ParseInputString("LY=" + (0 + walk_modifier)));
+            //        }
+            //        else if (Keyboard.IsKeyDown(Key.S) && l_down)
+            //        {
+            //            sink.Update(InputFrame.ParseInputString("LY=" + (255 - walk_modifier)));
+            //        }
+
+
+            //        if (Keyboard.IsKeyDown(Key.A) && l_left)
+            //        {
+            //            sink.Update(InputFrame.ParseInputString("LX=" + (0 + walk_modifier)));
+            //        }
+            //        else if (Keyboard.IsKeyDown(Key.D) && l_right)
+            //        {
+            //            sink.Update(InputFrame.ParseInputString("LX=" + (255 - walk_modifier)));
+            //        }
+            //    }
+            //    walk = true;
+            //}
+            //else if (Keyboard.IsKeyUp(Key.LeftCtrl) && walk)
+            //{
+            //    walk = false;
+            //    walk_modifier = 0;
+            //    Console.WriteLine("WALK UP");
+            //}
+
+            //--------------- UP ---------------
+            if (Keyboard.IsKeyDown(Key.W) && !l_up)
             {
-                if (!ly_pressed)
+                if (Keyboard.IsKeyDown(Key.S) || l_down)
                 {
-                    if (Keyboard.IsKeyDown(Key.W))
-                    {
-                        sink.Update(InputFrame.ParseInputString("LY=0"));
-                        Console.WriteLine("L_UP");
-                    }
-                    else if (Keyboard.IsKeyDown(Key.S))
-                    {
-                        sink.Update(InputFrame.ParseInputString("LY=255"));
-                        Console.WriteLine("L_DOWN");
-                    }
+                    l_down = true;
                 }
-                ly_pressed = true;
+                if (Keyboard.IsKeyDown(Key.W))
+                {
+                    sink.Update(InputFrame.ParseInputString("LY=" + (0 + walk_modifier)));
+                    Console.WriteLine("L_UP");
+                }
+                l_up = true;
             }
-            else if ((Keyboard.IsKeyUp(Key.W) || Keyboard.IsKeyUp(Key.S)) && ly_pressed)
+            else if (Keyboard.IsKeyUp(Key.W) && l_up)
             {
-                ly_pressed = false;
-                sink.Update(InputFrame.ParseInputString("LY=128"));
+                l_up = false;
+                if (Keyboard.IsKeyUp(Key.W))
+                    sink.Update(InputFrame.ParseInputString("LY=128"));
+                else
+                    l_down = false;
             }
 
-            //--------------- LEFT/RIGHT ---------------
-            if (Keyboard.IsKeyDown(Key.A) || Keyboard.IsKeyDown(Key.D))
+            //--------------- DOWN ---------------
+            if (Keyboard.IsKeyDown(Key.S) && !l_down)
             {
-                if (!lx_pressed)
+                if (Keyboard.IsKeyDown(Key.W) || l_up)
                 {
-                    if (Keyboard.IsKeyDown(Key.A))
-                    {
-                        sink.Update(InputFrame.ParseInputString("LX=0"));
-                        Console.WriteLine("L_LEFT");
-                    }
-                    else if (Keyboard.IsKeyDown(Key.D))
-                    {
-                        sink.Update(InputFrame.ParseInputString("LX=255"));
-                        Console.WriteLine("L_RIGHT");
-                    }
+                    l_up = true;
                 }
-                lx_pressed = true;
+                if (Keyboard.IsKeyDown(Key.S))
+                {
+                    sink.Update(InputFrame.ParseInputString("LY=" + (255 - walk_modifier)));
+                    Console.WriteLine("L_DOWN");
+                }
+                l_down = true;
             }
-            else if ((Keyboard.IsKeyUp(Key.A) || Keyboard.IsKeyUp(Key.D)) && lx_pressed)
+            else if (Keyboard.IsKeyUp(Key.S) && l_down)
             {
-                lx_pressed = false;
-                sink.Update(InputFrame.ParseInputString("LX=128"));
+                l_down = false;
+                if (Keyboard.IsKeyUp(Key.W))
+                    sink.Update(InputFrame.ParseInputString("LY=128"));
+                else
+                    l_up = false;
+            }
+
+            //--------------- LEFT ---------------
+            if (Keyboard.IsKeyDown(Key.A) && !l_left)
+            {
+                if (Keyboard.IsKeyDown(Key.D) || l_right)
+                {
+                    l_right = true;
+                }
+                if (Keyboard.IsKeyDown(Key.A))
+                {
+                    sink.Update(InputFrame.ParseInputString("LX=" + (0 + walk_modifier)));
+                    Console.WriteLine("L_LEFT");
+                }
+                l_left = true;
+            }
+            else if (Keyboard.IsKeyUp(Key.A) && l_left)
+            {
+                l_left = false;
+                if (Keyboard.IsKeyUp(Key.D))
+                    sink.Update(InputFrame.ParseInputString("LX=128"));
+                else
+                    l_right = false;
+            }
+
+            //--------------- RIGHT ---------------
+            if (Keyboard.IsKeyDown(Key.D) && !l_right)
+            {
+                if (Keyboard.IsKeyDown(Key.A) || l_left)
+                {
+                    l_left = true;
+                }
+                if (Keyboard.IsKeyDown(Key.D))
+                {
+                    sink.Update(InputFrame.ParseInputString("LX=" + (255 - walk_modifier)));
+                    Console.WriteLine("L_RIGHT");
+                }
+                l_right = true;
+            }
+            else if (Keyboard.IsKeyUp(Key.D) && l_right)
+            {
+                l_right = false;
+
+                if (Keyboard.IsKeyUp(Key.A))
+                    sink.Update(InputFrame.ParseInputString("LX=128"));
+                else
+                    l_left = false;
             }
         }
     }
