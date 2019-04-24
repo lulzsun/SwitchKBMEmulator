@@ -59,6 +59,13 @@
     </Compile>
     <Compile Include="IInputSink.cs" />
     <Compile Include="InputFrame.cs" />
+    <Compile Include="MouseTranslation.cs" />
+    <Compile Include="NoFocusTrackBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="NoFocusTrackBar.Designer.cs">
+      <DependentUpon>NoFocusTrackBar.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SwitchInputSink.cs" />
