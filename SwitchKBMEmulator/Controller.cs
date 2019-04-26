@@ -8,7 +8,7 @@ using Mouse = System.Windows.Forms.Cursor;
 
 namespace SwitchKBMEmulator
 {
-    public class Controller
+    class Controller
     {
         public class None
         {
@@ -89,7 +89,12 @@ namespace SwitchKBMEmulator
         public bool firstTime = true;
         private Point center;
         private Point last;
-        private MouseTranslation mouseTranslation;
+        public MouseTranslation mouseTranslation;
+
+        public Controller()
+        {
+            mouseTranslation = new MouseTranslation();
+        }
         
         //this will need to be rewritten to use raw input instead of hacky WinForms input...
         public void MouseUpdate(SwitchInputSink sink, Panel panel1)
@@ -147,10 +152,78 @@ namespace SwitchKBMEmulator
             else
             {
                 firstTime = false;
-                mouseTranslation = new MouseTranslation();
                 Mouse.Position = new Point(panel1.PointToScreen(Point.Empty).X + 128, panel1.PointToScreen(Point.Empty).Y + 128);
                 center = Mouse.Position;
             }
+        }
+
+        Point circlePosition = new Point(0, 0);
+        int circleCount = 1;
+        public void CircleTest(SwitchInputSink sink)
+        {
+            Point m_translation = mouseTranslation.Translate(circlePosition, new Point(0, 0));
+
+            switch(circleCount)
+            {
+                case 1:
+                    circlePosition.X = 0;
+                    circlePosition.Y = 1;
+                    break;
+                case 2:
+                    circlePosition.X = 1;
+                    circlePosition.Y = 1;
+                    break;
+                case 3:
+                    circlePosition.X = 1;
+                    circlePosition.Y = 0;
+                    break;
+                case 4:
+                    circlePosition.X = 1;
+                    circlePosition.Y = -1;
+                    break;
+                case 5:
+                    circlePosition.X = 0;
+                    circlePosition.Y = -1;
+                    break;
+                case 6:
+                    circlePosition.X = -1;
+                    circlePosition.Y = -1;
+                    break;
+                case 7:
+                    circlePosition.X = -1;
+                    circlePosition.Y = 0;
+                    break;
+                case 8:
+                    circlePosition.X = -1;
+                    circlePosition.Y = 1;
+                    circleCount = 1;
+                    break;
+            }
+            circleCount++;
+
+            var x = m_translation.X;
+            var y = m_translation.Y;
+
+            if (x > 255)
+            {
+                x = 255;
+            }
+            else if (x < 0)
+            {
+                x = 0;
+            }
+            if (y > 255)
+            {
+                y = 255;
+            }
+            else if (y < 0)
+            {
+                y = 0;
+            }
+
+            Console.WriteLine(x + ", " + y);
+            sink.Update(InputFrame.ParseInputString("RX=" + x));
+            sink.Update(InputFrame.ParseInputString("RY=" + y));
         }
 
 

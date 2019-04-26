@@ -5,47 +5,47 @@ namespace SwitchKBMEmulator
     class MouseTranslation
     {
         //Sensitivity
-        System.Windows.Point mc_sensitivity = new System.Windows.Point(0.5, 0.5);
+        public System.Windows.Point mc_sensitivity = new System.Windows.Point(0.5, 0.5);
 
         //Sensitivity with Sigmoid
-        System.Windows.Point mc_sensitivity2 = new System.Windows.Point(0.5, 0.5);
+        public System.Windows.Point mc_sensitivity2 = new System.Windows.Point(0.5, 0.5);
 
         //Mouse Delta Start Threshold
-        System.Windows.Point mc_mouse_delta_start_threshold = new System.Windows.Point(0.0, 0.0);
+        public System.Windows.Point mc_mouse_delta_start_threshold = new System.Windows.Point(0.0, 0.0);
 
         //Delta Sensitivity Sigmoid Constant, -1.0 < k < 1.0
-        System.Windows.Point mc_delta_sensitivity_sigmoid_constant = new System.Windows.Point(-0.5, -0.5);
+        public System.Windows.Point mc_delta_sensitivity_sigmoid_constant = new System.Windows.Point(-0.5, -0.5);
 
         //Initial Delta
-        System.Windows.Point mc_delta_initial = new System.Windows.Point(128 * 0.5, 128 * 0.5);
+        public System.Windows.Point mc_delta_initial = new System.Windows.Point(128 * 0.5, 128 * 0.5);
 
         //Delta-Stopping Threshold, 0.0 <= k <= 1.0
-        System.Windows.Point mc_delta_stop_threshold = new System.Windows.Point(128 * 0.49, 128 * 0.49);
+        public System.Windows.Point mc_delta_stop_threshold = new System.Windows.Point(128 * 0.49, 128 * 0.49);
 
         //Delta Damping Origin
-        System.Windows.Point mc_delta_damping_origin = new System.Windows.Point(128 * 0.4, 128 * 0.4);
+        public System.Windows.Point mc_delta_damping_origin = new System.Windows.Point(128 * 0.4, 128 * 0.4);
 
         //Delta Damping, 0.0 <= k <= 1.0
-        System.Windows.Point mc_delta_damping = new System.Windows.Point(0.0, 0.0);
+        public System.Windows.Point mc_delta_damping = new System.Windows.Point(0.0, 0.0);
 
         //Delta Damping with Sigmoid, 0.0 <= k <= 1.0
-        System.Windows.Point mc_delta_damping2 = new System.Windows.Point(0.1, 0.1);
+        public System.Windows.Point mc_delta_damping2 = new System.Windows.Point(0.1, 0.1);
 
         //Delta Damping with Sigmoid Constant, -1.0 < k < 1.0
-        System.Windows.Point mc_delta_damping_sigmoid_constant = new System.Windows.Point(0.5, 0.5);
+        public System.Windows.Point mc_delta_damping_sigmoid_constant = new System.Windows.Point(0.5, 0.5);
 
         //Maximum Delta
-        System.Windows.Point mc_delta_max = new System.Windows.Point(128, 128);
+        public System.Windows.Point mc_delta_max = new System.Windows.Point(128 * 2.0, 128 * 2.0);
 
         //system.threadExecutionInterval = 1000.0 / mc_framerate
 
         //Mouse Camera Init
         //bool mc_enabled = false; // Toggle
-        System.Windows.Point mc_delta = new System.Windows.Point(); // Mouse Camera Delta
+        public System.Windows.Point mc_delta = new System.Windows.Point(); // Mouse Camera Delta
 
         //System.Windows.Point mc_screen_half = new System.Windows.Point(); // Screen Half
-        System.Windows.Point mc_mouse_delta = new System.Windows.Point(); // Mouse Delta
-        System.Windows.Point mc_mouse = new System.Windows.Point(); // Mouse Position
+        public System.Windows.Point mc_mouse_delta = new System.Windows.Point(); // Mouse Delta
+        public System.Windows.Point mc_mouse = new System.Windows.Point(); // Mouse Position
 
         public MouseTranslation()
         {

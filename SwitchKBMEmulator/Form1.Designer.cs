@@ -36,130 +36,137 @@
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.numericUpDown19 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown20 = new System.Windows.Forms.NumericUpDown();
+            this.circleTestCheck = new System.Windows.Forms.CheckBox();
+            this.mValueY10 = new System.Windows.Forms.NumericUpDown();
+            this.mValueX10 = new System.Windows.Forms.NumericUpDown();
             this.checkBox10 = new System.Windows.Forms.CheckBox();
-            this.noFocusTrackBar19 = new SwitchKBMEmulator.NoFocusTrackBar();
+            this.mTrackBarY10 = new SwitchKBMEmulator.NoFocusTrackBar();
             this.label28 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
-            this.noFocusTrackBar20 = new SwitchKBMEmulator.NoFocusTrackBar();
-            this.numericUpDown17 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown18 = new System.Windows.Forms.NumericUpDown();
+            this.mTrackBarX10 = new SwitchKBMEmulator.NoFocusTrackBar();
+            this.mValueY9 = new System.Windows.Forms.NumericUpDown();
+            this.mValueX9 = new System.Windows.Forms.NumericUpDown();
             this.checkBox9 = new System.Windows.Forms.CheckBox();
-            this.noFocusTrackBar17 = new SwitchKBMEmulator.NoFocusTrackBar();
+            this.mTrackBarY9 = new SwitchKBMEmulator.NoFocusTrackBar();
             this.label25 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
-            this.noFocusTrackBar18 = new SwitchKBMEmulator.NoFocusTrackBar();
-            this.numericUpDown15 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown16 = new System.Windows.Forms.NumericUpDown();
+            this.mTrackBarX9 = new SwitchKBMEmulator.NoFocusTrackBar();
+            this.mValueY8 = new System.Windows.Forms.NumericUpDown();
+            this.mValueX8 = new System.Windows.Forms.NumericUpDown();
             this.checkBox8 = new System.Windows.Forms.CheckBox();
-            this.noFocusTrackBar15 = new SwitchKBMEmulator.NoFocusTrackBar();
+            this.mTrackBarY8 = new SwitchKBMEmulator.NoFocusTrackBar();
             this.label22 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
-            this.noFocusTrackBar16 = new SwitchKBMEmulator.NoFocusTrackBar();
-            this.numericUpDown13 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown14 = new System.Windows.Forms.NumericUpDown();
-            this.checkBox7 = new System.Windows.Forms.CheckBox();
-            this.noFocusTrackBar13 = new SwitchKBMEmulator.NoFocusTrackBar();
+            this.mTrackBarX8 = new SwitchKBMEmulator.NoFocusTrackBar();
+            this.mValueY6 = new System.Windows.Forms.NumericUpDown();
+            this.mValueX6 = new System.Windows.Forms.NumericUpDown();
+            this.checkBox6 = new System.Windows.Forms.CheckBox();
+            this.mTrackBarY6 = new SwitchKBMEmulator.NoFocusTrackBar();
             this.label19 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
-            this.noFocusTrackBar14 = new SwitchKBMEmulator.NoFocusTrackBar();
-            this.numericUpDown11 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown12 = new System.Windows.Forms.NumericUpDown();
-            this.checkBox6 = new System.Windows.Forms.CheckBox();
-            this.noFocusTrackBar11 = new SwitchKBMEmulator.NoFocusTrackBar();
+            this.mTrackBarX6 = new SwitchKBMEmulator.NoFocusTrackBar();
+            this.mValueY7 = new System.Windows.Forms.NumericUpDown();
+            this.mValueX7 = new System.Windows.Forms.NumericUpDown();
+            this.checkBox7 = new System.Windows.Forms.CheckBox();
+            this.mTrackBarY7 = new SwitchKBMEmulator.NoFocusTrackBar();
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
-            this.noFocusTrackBar12 = new SwitchKBMEmulator.NoFocusTrackBar();
-            this.numericUpDown9 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown10 = new System.Windows.Forms.NumericUpDown();
+            this.mTrackBarX7 = new SwitchKBMEmulator.NoFocusTrackBar();
+            this.mValueY5 = new System.Windows.Forms.NumericUpDown();
+            this.mValueX5 = new System.Windows.Forms.NumericUpDown();
             this.checkBox5 = new System.Windows.Forms.CheckBox();
-            this.noFocusTrackBar9 = new SwitchKBMEmulator.NoFocusTrackBar();
+            this.mTrackBarY5 = new SwitchKBMEmulator.NoFocusTrackBar();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
-            this.noFocusTrackBar10 = new SwitchKBMEmulator.NoFocusTrackBar();
-            this.numericUpDown7 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown8 = new System.Windows.Forms.NumericUpDown();
+            this.mTrackBarX5 = new SwitchKBMEmulator.NoFocusTrackBar();
+            this.mValueY4 = new System.Windows.Forms.NumericUpDown();
+            this.mValueX4 = new System.Windows.Forms.NumericUpDown();
             this.checkBox4 = new System.Windows.Forms.CheckBox();
-            this.noFocusTrackBar7 = new SwitchKBMEmulator.NoFocusTrackBar();
+            this.mTrackBarY4 = new SwitchKBMEmulator.NoFocusTrackBar();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.noFocusTrackBar8 = new SwitchKBMEmulator.NoFocusTrackBar();
-            this.numericUpDown5 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown6 = new System.Windows.Forms.NumericUpDown();
+            this.mTrackBarX4 = new SwitchKBMEmulator.NoFocusTrackBar();
+            this.mValueY3 = new System.Windows.Forms.NumericUpDown();
+            this.mValueX3 = new System.Windows.Forms.NumericUpDown();
             this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.noFocusTrackBar5 = new SwitchKBMEmulator.NoFocusTrackBar();
+            this.mTrackBarY3 = new SwitchKBMEmulator.NoFocusTrackBar();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.noFocusTrackBar6 = new SwitchKBMEmulator.NoFocusTrackBar();
-            this.numericUpDown3 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown4 = new System.Windows.Forms.NumericUpDown();
+            this.mTrackBarX3 = new SwitchKBMEmulator.NoFocusTrackBar();
+            this.mValueY2 = new System.Windows.Forms.NumericUpDown();
+            this.mValueX2 = new System.Windows.Forms.NumericUpDown();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.noFocusTrackBar3 = new SwitchKBMEmulator.NoFocusTrackBar();
+            this.mTrackBarY2 = new SwitchKBMEmulator.NoFocusTrackBar();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.noFocusTrackBar4 = new SwitchKBMEmulator.NoFocusTrackBar();
-            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.mTrackBarX2 = new SwitchKBMEmulator.NoFocusTrackBar();
+            this.mValueY1 = new System.Windows.Forms.NumericUpDown();
+            this.mValueX1 = new System.Windows.Forms.NumericUpDown();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.noFocusTrackBar2 = new SwitchKBMEmulator.NoFocusTrackBar();
+            this.mTrackBarY1 = new SwitchKBMEmulator.NoFocusTrackBar();
             this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.noFocusTrackBar1 = new SwitchKBMEmulator.NoFocusTrackBar();
+            this.mTrackBarX1 = new SwitchKBMEmulator.NoFocusTrackBar();
+            this.pComboBox = new System.Windows.Forms.ComboBox();
+            this.label31 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.timer3 = new System.Windows.Forms.Timer(this.components);
             this.tabControl1.SuspendLayout();
             this.tabPage3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown19)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown20)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.noFocusTrackBar19)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.noFocusTrackBar20)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown17)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown18)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.noFocusTrackBar17)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.noFocusTrackBar18)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown15)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown16)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.noFocusTrackBar15)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.noFocusTrackBar16)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown13)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown14)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.noFocusTrackBar13)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.noFocusTrackBar14)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown12)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.noFocusTrackBar11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.noFocusTrackBar12)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.noFocusTrackBar9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.noFocusTrackBar10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.noFocusTrackBar7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.noFocusTrackBar8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.noFocusTrackBar5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.noFocusTrackBar6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.noFocusTrackBar3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.noFocusTrackBar4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.noFocusTrackBar2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mValueY10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mValueX10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mTrackBarY10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mTrackBarX10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mValueY9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mValueX9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mTrackBarY9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mTrackBarX9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mValueY8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mValueX8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mTrackBarY8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mTrackBarX8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mValueY6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mValueX6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mTrackBarY6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mTrackBarX6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mValueY7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mValueX7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mTrackBarY7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mTrackBarX7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mValueY5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mValueX5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mTrackBarY5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mTrackBarX5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mValueY4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mValueX4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mTrackBarY4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mTrackBarX4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mValueY3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mValueX3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mTrackBarY3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mTrackBarX3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mValueY2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mValueX2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mTrackBarY2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mTrackBarX2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mValueY1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mValueX1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mTrackBarY1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.noFocusTrackBar1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mTrackBarX1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -167,7 +174,7 @@
             this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.panel1.BackColor = System.Drawing.Color.Black;
-            this.panel1.Location = new System.Drawing.Point(212, 132);
+            this.panel1.Location = new System.Drawing.Point(229, 132);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(255, 255);
             this.panel1.TabIndex = 1;
@@ -194,7 +201,7 @@
             this.tabControl1.Location = new System.Drawing.Point(12, 12);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(654, 495);
+            this.tabControl1.Size = new System.Drawing.Size(689, 495);
             this.tabControl1.TabIndex = 2;
             // 
             // tabPage1
@@ -203,7 +210,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(646, 469);
+            this.tabPage1.Size = new System.Drawing.Size(681, 469);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Controller";
             // 
@@ -212,144 +219,182 @@
             this.tabPage2.BackColor = System.Drawing.SystemColors.Control;
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Size = new System.Drawing.Size(646, 469);
+            this.tabPage2.Size = new System.Drawing.Size(681, 469);
             this.tabPage2.TabIndex = 2;
             this.tabPage2.Text = "Keybinds";
             // 
             // tabPage3
             // 
             this.tabPage3.BackColor = System.Drawing.SystemColors.Control;
-            this.tabPage3.Controls.Add(this.numericUpDown19);
-            this.tabPage3.Controls.Add(this.numericUpDown20);
+            this.tabPage3.Controls.Add(this.circleTestCheck);
+            this.tabPage3.Controls.Add(this.mValueY10);
+            this.tabPage3.Controls.Add(this.mValueX10);
             this.tabPage3.Controls.Add(this.checkBox10);
-            this.tabPage3.Controls.Add(this.noFocusTrackBar19);
+            this.tabPage3.Controls.Add(this.mTrackBarY10);
             this.tabPage3.Controls.Add(this.label28);
             this.tabPage3.Controls.Add(this.label29);
             this.tabPage3.Controls.Add(this.label30);
-            this.tabPage3.Controls.Add(this.noFocusTrackBar20);
-            this.tabPage3.Controls.Add(this.numericUpDown17);
-            this.tabPage3.Controls.Add(this.numericUpDown18);
+            this.tabPage3.Controls.Add(this.mTrackBarX10);
+            this.tabPage3.Controls.Add(this.mValueY9);
+            this.tabPage3.Controls.Add(this.mValueX9);
             this.tabPage3.Controls.Add(this.checkBox9);
-            this.tabPage3.Controls.Add(this.noFocusTrackBar17);
+            this.tabPage3.Controls.Add(this.mTrackBarY9);
             this.tabPage3.Controls.Add(this.label25);
             this.tabPage3.Controls.Add(this.label26);
             this.tabPage3.Controls.Add(this.label27);
-            this.tabPage3.Controls.Add(this.noFocusTrackBar18);
-            this.tabPage3.Controls.Add(this.numericUpDown15);
-            this.tabPage3.Controls.Add(this.numericUpDown16);
+            this.tabPage3.Controls.Add(this.mTrackBarX9);
+            this.tabPage3.Controls.Add(this.mValueY8);
+            this.tabPage3.Controls.Add(this.mValueX8);
             this.tabPage3.Controls.Add(this.checkBox8);
-            this.tabPage3.Controls.Add(this.noFocusTrackBar15);
+            this.tabPage3.Controls.Add(this.mTrackBarY8);
             this.tabPage3.Controls.Add(this.label22);
             this.tabPage3.Controls.Add(this.label23);
             this.tabPage3.Controls.Add(this.label24);
-            this.tabPage3.Controls.Add(this.noFocusTrackBar16);
-            this.tabPage3.Controls.Add(this.numericUpDown13);
-            this.tabPage3.Controls.Add(this.numericUpDown14);
-            this.tabPage3.Controls.Add(this.checkBox7);
-            this.tabPage3.Controls.Add(this.noFocusTrackBar13);
+            this.tabPage3.Controls.Add(this.mTrackBarX8);
+            this.tabPage3.Controls.Add(this.mValueY6);
+            this.tabPage3.Controls.Add(this.mValueX6);
+            this.tabPage3.Controls.Add(this.checkBox6);
+            this.tabPage3.Controls.Add(this.mTrackBarY6);
             this.tabPage3.Controls.Add(this.label19);
             this.tabPage3.Controls.Add(this.label20);
             this.tabPage3.Controls.Add(this.label21);
-            this.tabPage3.Controls.Add(this.noFocusTrackBar14);
-            this.tabPage3.Controls.Add(this.numericUpDown11);
-            this.tabPage3.Controls.Add(this.numericUpDown12);
-            this.tabPage3.Controls.Add(this.checkBox6);
-            this.tabPage3.Controls.Add(this.noFocusTrackBar11);
+            this.tabPage3.Controls.Add(this.mTrackBarX6);
+            this.tabPage3.Controls.Add(this.mValueY7);
+            this.tabPage3.Controls.Add(this.mValueX7);
+            this.tabPage3.Controls.Add(this.checkBox7);
+            this.tabPage3.Controls.Add(this.mTrackBarY7);
             this.tabPage3.Controls.Add(this.label14);
             this.tabPage3.Controls.Add(this.label15);
             this.tabPage3.Controls.Add(this.label16);
-            this.tabPage3.Controls.Add(this.noFocusTrackBar12);
-            this.tabPage3.Controls.Add(this.numericUpDown9);
-            this.tabPage3.Controls.Add(this.numericUpDown10);
+            this.tabPage3.Controls.Add(this.mTrackBarX7);
+            this.tabPage3.Controls.Add(this.mValueY5);
+            this.tabPage3.Controls.Add(this.mValueX5);
             this.tabPage3.Controls.Add(this.checkBox5);
-            this.tabPage3.Controls.Add(this.noFocusTrackBar9);
+            this.tabPage3.Controls.Add(this.mTrackBarY5);
             this.tabPage3.Controls.Add(this.label11);
             this.tabPage3.Controls.Add(this.label12);
             this.tabPage3.Controls.Add(this.label13);
-            this.tabPage3.Controls.Add(this.noFocusTrackBar10);
-            this.tabPage3.Controls.Add(this.numericUpDown7);
-            this.tabPage3.Controls.Add(this.numericUpDown8);
+            this.tabPage3.Controls.Add(this.mTrackBarX5);
+            this.tabPage3.Controls.Add(this.mValueY4);
+            this.tabPage3.Controls.Add(this.mValueX4);
             this.tabPage3.Controls.Add(this.checkBox4);
-            this.tabPage3.Controls.Add(this.noFocusTrackBar7);
+            this.tabPage3.Controls.Add(this.mTrackBarY4);
             this.tabPage3.Controls.Add(this.label8);
             this.tabPage3.Controls.Add(this.label9);
             this.tabPage3.Controls.Add(this.label10);
-            this.tabPage3.Controls.Add(this.noFocusTrackBar8);
-            this.tabPage3.Controls.Add(this.numericUpDown5);
-            this.tabPage3.Controls.Add(this.numericUpDown6);
+            this.tabPage3.Controls.Add(this.mTrackBarX4);
+            this.tabPage3.Controls.Add(this.mValueY3);
+            this.tabPage3.Controls.Add(this.mValueX3);
             this.tabPage3.Controls.Add(this.checkBox3);
-            this.tabPage3.Controls.Add(this.noFocusTrackBar5);
+            this.tabPage3.Controls.Add(this.mTrackBarY3);
             this.tabPage3.Controls.Add(this.label5);
             this.tabPage3.Controls.Add(this.label6);
             this.tabPage3.Controls.Add(this.label7);
-            this.tabPage3.Controls.Add(this.noFocusTrackBar6);
-            this.tabPage3.Controls.Add(this.numericUpDown3);
-            this.tabPage3.Controls.Add(this.numericUpDown4);
+            this.tabPage3.Controls.Add(this.mTrackBarX3);
+            this.tabPage3.Controls.Add(this.mValueY2);
+            this.tabPage3.Controls.Add(this.mValueX2);
             this.tabPage3.Controls.Add(this.checkBox2);
-            this.tabPage3.Controls.Add(this.noFocusTrackBar3);
+            this.tabPage3.Controls.Add(this.mTrackBarY2);
             this.tabPage3.Controls.Add(this.label1);
             this.tabPage3.Controls.Add(this.label2);
             this.tabPage3.Controls.Add(this.label3);
-            this.tabPage3.Controls.Add(this.noFocusTrackBar4);
-            this.tabPage3.Controls.Add(this.numericUpDown2);
-            this.tabPage3.Controls.Add(this.numericUpDown1);
+            this.tabPage3.Controls.Add(this.mTrackBarX2);
+            this.tabPage3.Controls.Add(this.mValueY1);
+            this.tabPage3.Controls.Add(this.mValueX1);
             this.tabPage3.Controls.Add(this.checkBox1);
-            this.tabPage3.Controls.Add(this.noFocusTrackBar2);
+            this.tabPage3.Controls.Add(this.mTrackBarY1);
             this.tabPage3.Controls.Add(this.label17);
             this.tabPage3.Controls.Add(this.label18);
             this.tabPage3.Controls.Add(this.pictureBox1);
             this.tabPage3.Controls.Add(this.label4);
-            this.tabPage3.Controls.Add(this.noFocusTrackBar1);
+            this.tabPage3.Controls.Add(this.mTrackBarX1);
             this.tabPage3.ForeColor = System.Drawing.SystemColors.ControlText;
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(646, 469);
+            this.tabPage3.Size = new System.Drawing.Size(681, 469);
             this.tabPage3.TabIndex = 1;
             this.tabPage3.Text = "Mouse Settings";
             // 
-            // numericUpDown19
+            // circleTestCheck
             // 
-            this.numericUpDown19.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.numericUpDown19.Location = new System.Drawing.Point(608, 411);
-            this.numericUpDown19.Name = "numericUpDown19";
-            this.numericUpDown19.Size = new System.Drawing.Size(35, 20);
-            this.numericUpDown19.TabIndex = 113;
+            this.circleTestCheck.AutoSize = true;
+            this.circleTestCheck.Location = new System.Drawing.Point(213, 359);
+            this.circleTestCheck.Name = "circleTestCheck";
+            this.circleTestCheck.Size = new System.Drawing.Size(76, 17);
+            this.circleTestCheck.TabIndex = 114;
+            this.circleTestCheck.Text = "Circle Test";
+            this.circleTestCheck.UseVisualStyleBackColor = true;
             // 
-            // numericUpDown20
+            // mValueY10
             // 
-            this.numericUpDown20.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.numericUpDown20.Location = new System.Drawing.Point(608, 386);
-            this.numericUpDown20.Name = "numericUpDown20";
-            this.numericUpDown20.Size = new System.Drawing.Size(35, 20);
-            this.numericUpDown20.TabIndex = 112;
+            this.mValueY10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.mValueY10.DecimalPlaces = 3;
+            this.mValueY10.Enabled = false;
+            this.mValueY10.Increment = new decimal(new int[] {
+            10,
+            0,
+            0,
+            196608});
+            this.mValueY10.Location = new System.Drawing.Point(625, 411);
+            this.mValueY10.Minimum = new decimal(new int[] {
+            100,
+            0,
+            0,
+            -2147483648});
+            this.mValueY10.Name = "mValueY10";
+            this.mValueY10.Size = new System.Drawing.Size(53, 20);
+            this.mValueY10.TabIndex = 113;
+            // 
+            // mValueX10
+            // 
+            this.mValueX10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.mValueX10.DecimalPlaces = 3;
+            this.mValueX10.Increment = new decimal(new int[] {
+            10,
+            0,
+            0,
+            196608});
+            this.mValueX10.Location = new System.Drawing.Point(625, 386);
+            this.mValueX10.Minimum = new decimal(new int[] {
+            100,
+            0,
+            0,
+            -2147483648});
+            this.mValueX10.Name = "mValueX10";
+            this.mValueX10.Size = new System.Drawing.Size(53, 20);
+            this.mValueX10.TabIndex = 112;
             // 
             // checkBox10
             // 
             this.checkBox10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.checkBox10.AutoSize = true;
-            this.checkBox10.Location = new System.Drawing.Point(460, 437);
+            this.checkBox10.Checked = true;
+            this.checkBox10.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.checkBox10.Location = new System.Drawing.Point(477, 437);
             this.checkBox10.Name = "checkBox10";
-            this.checkBox10.Size = new System.Drawing.Size(94, 17);
+            this.checkBox10.Size = new System.Drawing.Size(112, 17);
             this.checkBox10.TabIndex = 111;
-            this.checkBox10.Text = "Maintain Ratio";
+            this.checkBox10.Text = "Maintain 1:1 Ratio";
             this.checkBox10.UseVisualStyleBackColor = true;
             // 
-            // noFocusTrackBar19
+            // mTrackBarY10
             // 
-            this.noFocusTrackBar19.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.noFocusTrackBar19.Location = new System.Drawing.Point(472, 409);
-            this.noFocusTrackBar19.Maximum = 100;
-            this.noFocusTrackBar19.Name = "noFocusTrackBar19";
-            this.noFocusTrackBar19.Size = new System.Drawing.Size(130, 45);
-            this.noFocusTrackBar19.TabIndex = 110;
-            this.noFocusTrackBar19.TickStyle = System.Windows.Forms.TickStyle.None;
+            this.mTrackBarY10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.mTrackBarY10.Enabled = false;
+            this.mTrackBarY10.Location = new System.Drawing.Point(489, 411);
+            this.mTrackBarY10.Maximum = 1000;
+            this.mTrackBarY10.Minimum = -1000;
+            this.mTrackBarY10.Name = "mTrackBarY10";
+            this.mTrackBarY10.Size = new System.Drawing.Size(130, 45);
+            this.mTrackBarY10.TabIndex = 110;
+            this.mTrackBarY10.TickStyle = System.Windows.Forms.TickStyle.None;
             // 
             // label28
             // 
             this.label28.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label28.AutoSize = true;
-            this.label28.Location = new System.Drawing.Point(457, 413);
+            this.label28.Location = new System.Drawing.Point(474, 415);
             this.label28.Name = "label28";
             this.label28.Size = new System.Drawing.Size(17, 13);
             this.label28.TabIndex = 108;
@@ -359,7 +404,7 @@
             // 
             this.label29.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label29.AutoSize = true;
-            this.label29.Location = new System.Drawing.Point(457, 388);
+            this.label29.Location = new System.Drawing.Point(474, 390);
             this.label29.Name = "label29";
             this.label29.Size = new System.Drawing.Size(17, 13);
             this.label29.TabIndex = 107;
@@ -369,64 +414,81 @@
             // 
             this.label30.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label30.AutoSize = true;
-            this.label30.Location = new System.Drawing.Point(457, 369);
+            this.label30.Location = new System.Drawing.Point(474, 371);
             this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(41, 13);
+            this.label30.Size = new System.Drawing.Size(184, 13);
             this.label30.TabIndex = 106;
-            this.label30.Text = "label30";
+            this.label30.Text = "Delta Damping with Sigmoid Constant";
             // 
-            // noFocusTrackBar20
+            // mTrackBarX10
             // 
-            this.noFocusTrackBar20.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.noFocusTrackBar20.Location = new System.Drawing.Point(472, 383);
-            this.noFocusTrackBar20.Maximum = 100;
-            this.noFocusTrackBar20.Name = "noFocusTrackBar20";
-            this.noFocusTrackBar20.Size = new System.Drawing.Size(130, 45);
-            this.noFocusTrackBar20.TabIndex = 109;
-            this.noFocusTrackBar20.TickStyle = System.Windows.Forms.TickStyle.None;
+            this.mTrackBarX10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.mTrackBarX10.Location = new System.Drawing.Point(489, 385);
+            this.mTrackBarX10.Maximum = 1000;
+            this.mTrackBarX10.Minimum = -1000;
+            this.mTrackBarX10.Name = "mTrackBarX10";
+            this.mTrackBarX10.Size = new System.Drawing.Size(130, 45);
+            this.mTrackBarX10.TabIndex = 109;
+            this.mTrackBarX10.TickStyle = System.Windows.Forms.TickStyle.None;
             // 
-            // numericUpDown17
+            // mValueY9
             // 
-            this.numericUpDown17.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.numericUpDown17.Location = new System.Drawing.Point(608, 323);
-            this.numericUpDown17.Name = "numericUpDown17";
-            this.numericUpDown17.Size = new System.Drawing.Size(35, 20);
-            this.numericUpDown17.TabIndex = 105;
+            this.mValueY9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.mValueY9.DecimalPlaces = 3;
+            this.mValueY9.Enabled = false;
+            this.mValueY9.Increment = new decimal(new int[] {
+            10,
+            0,
+            0,
+            196608});
+            this.mValueY9.Location = new System.Drawing.Point(625, 323);
+            this.mValueY9.Name = "mValueY9";
+            this.mValueY9.Size = new System.Drawing.Size(53, 20);
+            this.mValueY9.TabIndex = 105;
             // 
-            // numericUpDown18
+            // mValueX9
             // 
-            this.numericUpDown18.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.numericUpDown18.Location = new System.Drawing.Point(608, 298);
-            this.numericUpDown18.Name = "numericUpDown18";
-            this.numericUpDown18.Size = new System.Drawing.Size(35, 20);
-            this.numericUpDown18.TabIndex = 104;
+            this.mValueX9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.mValueX9.DecimalPlaces = 3;
+            this.mValueX9.Increment = new decimal(new int[] {
+            10,
+            0,
+            0,
+            196608});
+            this.mValueX9.Location = new System.Drawing.Point(625, 298);
+            this.mValueX9.Name = "mValueX9";
+            this.mValueX9.Size = new System.Drawing.Size(53, 20);
+            this.mValueX9.TabIndex = 104;
             // 
             // checkBox9
             // 
             this.checkBox9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.checkBox9.AutoSize = true;
-            this.checkBox9.Location = new System.Drawing.Point(460, 349);
+            this.checkBox9.Checked = true;
+            this.checkBox9.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.checkBox9.Location = new System.Drawing.Point(477, 349);
             this.checkBox9.Name = "checkBox9";
-            this.checkBox9.Size = new System.Drawing.Size(94, 17);
+            this.checkBox9.Size = new System.Drawing.Size(112, 17);
             this.checkBox9.TabIndex = 103;
-            this.checkBox9.Text = "Maintain Ratio";
+            this.checkBox9.Text = "Maintain 1:1 Ratio";
             this.checkBox9.UseVisualStyleBackColor = true;
             // 
-            // noFocusTrackBar17
+            // mTrackBarY9
             // 
-            this.noFocusTrackBar17.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.noFocusTrackBar17.Location = new System.Drawing.Point(472, 321);
-            this.noFocusTrackBar17.Maximum = 100;
-            this.noFocusTrackBar17.Name = "noFocusTrackBar17";
-            this.noFocusTrackBar17.Size = new System.Drawing.Size(130, 45);
-            this.noFocusTrackBar17.TabIndex = 102;
-            this.noFocusTrackBar17.TickStyle = System.Windows.Forms.TickStyle.None;
+            this.mTrackBarY9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.mTrackBarY9.Enabled = false;
+            this.mTrackBarY9.Location = new System.Drawing.Point(489, 323);
+            this.mTrackBarY9.Maximum = 1000;
+            this.mTrackBarY9.Name = "mTrackBarY9";
+            this.mTrackBarY9.Size = new System.Drawing.Size(130, 45);
+            this.mTrackBarY9.TabIndex = 102;
+            this.mTrackBarY9.TickStyle = System.Windows.Forms.TickStyle.None;
             // 
             // label25
             // 
             this.label25.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(457, 325);
+            this.label25.Location = new System.Drawing.Point(474, 327);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(17, 13);
             this.label25.TabIndex = 100;
@@ -436,7 +498,7 @@
             // 
             this.label26.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(457, 300);
+            this.label26.Location = new System.Drawing.Point(474, 302);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(17, 13);
             this.label26.TabIndex = 99;
@@ -446,64 +508,80 @@
             // 
             this.label27.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(457, 281);
+            this.label27.Location = new System.Drawing.Point(474, 283);
             this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(41, 13);
+            this.label27.Size = new System.Drawing.Size(139, 13);
             this.label27.TabIndex = 98;
-            this.label27.Text = "label27";
+            this.label27.Text = "Delta Damping with Sigmoid";
             // 
-            // noFocusTrackBar18
+            // mTrackBarX9
             // 
-            this.noFocusTrackBar18.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.noFocusTrackBar18.Location = new System.Drawing.Point(472, 295);
-            this.noFocusTrackBar18.Maximum = 100;
-            this.noFocusTrackBar18.Name = "noFocusTrackBar18";
-            this.noFocusTrackBar18.Size = new System.Drawing.Size(130, 45);
-            this.noFocusTrackBar18.TabIndex = 101;
-            this.noFocusTrackBar18.TickStyle = System.Windows.Forms.TickStyle.None;
+            this.mTrackBarX9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.mTrackBarX9.Location = new System.Drawing.Point(489, 297);
+            this.mTrackBarX9.Maximum = 1000;
+            this.mTrackBarX9.Name = "mTrackBarX9";
+            this.mTrackBarX9.Size = new System.Drawing.Size(130, 45);
+            this.mTrackBarX9.TabIndex = 101;
+            this.mTrackBarX9.TickStyle = System.Windows.Forms.TickStyle.None;
             // 
-            // numericUpDown15
+            // mValueY8
             // 
-            this.numericUpDown15.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.numericUpDown15.Location = new System.Drawing.Point(608, 235);
-            this.numericUpDown15.Name = "numericUpDown15";
-            this.numericUpDown15.Size = new System.Drawing.Size(35, 20);
-            this.numericUpDown15.TabIndex = 97;
+            this.mValueY8.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.mValueY8.DecimalPlaces = 3;
+            this.mValueY8.Enabled = false;
+            this.mValueY8.Increment = new decimal(new int[] {
+            10,
+            0,
+            0,
+            196608});
+            this.mValueY8.Location = new System.Drawing.Point(625, 235);
+            this.mValueY8.Name = "mValueY8";
+            this.mValueY8.Size = new System.Drawing.Size(53, 20);
+            this.mValueY8.TabIndex = 97;
             // 
-            // numericUpDown16
+            // mValueX8
             // 
-            this.numericUpDown16.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.numericUpDown16.Location = new System.Drawing.Point(608, 210);
-            this.numericUpDown16.Name = "numericUpDown16";
-            this.numericUpDown16.Size = new System.Drawing.Size(35, 20);
-            this.numericUpDown16.TabIndex = 96;
+            this.mValueX8.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.mValueX8.DecimalPlaces = 3;
+            this.mValueX8.Increment = new decimal(new int[] {
+            10,
+            0,
+            0,
+            196608});
+            this.mValueX8.Location = new System.Drawing.Point(625, 210);
+            this.mValueX8.Name = "mValueX8";
+            this.mValueX8.Size = new System.Drawing.Size(53, 20);
+            this.mValueX8.TabIndex = 96;
             // 
             // checkBox8
             // 
             this.checkBox8.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.checkBox8.AutoSize = true;
-            this.checkBox8.Location = new System.Drawing.Point(460, 261);
+            this.checkBox8.Checked = true;
+            this.checkBox8.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.checkBox8.Location = new System.Drawing.Point(477, 261);
             this.checkBox8.Name = "checkBox8";
-            this.checkBox8.Size = new System.Drawing.Size(94, 17);
+            this.checkBox8.Size = new System.Drawing.Size(112, 17);
             this.checkBox8.TabIndex = 95;
-            this.checkBox8.Text = "Maintain Ratio";
+            this.checkBox8.Text = "Maintain 1:1 Ratio";
             this.checkBox8.UseVisualStyleBackColor = true;
             // 
-            // noFocusTrackBar15
+            // mTrackBarY8
             // 
-            this.noFocusTrackBar15.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.noFocusTrackBar15.Location = new System.Drawing.Point(472, 233);
-            this.noFocusTrackBar15.Maximum = 100;
-            this.noFocusTrackBar15.Name = "noFocusTrackBar15";
-            this.noFocusTrackBar15.Size = new System.Drawing.Size(130, 45);
-            this.noFocusTrackBar15.TabIndex = 94;
-            this.noFocusTrackBar15.TickStyle = System.Windows.Forms.TickStyle.None;
+            this.mTrackBarY8.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.mTrackBarY8.Enabled = false;
+            this.mTrackBarY8.Location = new System.Drawing.Point(489, 235);
+            this.mTrackBarY8.Maximum = 1000;
+            this.mTrackBarY8.Name = "mTrackBarY8";
+            this.mTrackBarY8.Size = new System.Drawing.Size(130, 45);
+            this.mTrackBarY8.TabIndex = 94;
+            this.mTrackBarY8.TickStyle = System.Windows.Forms.TickStyle.None;
             // 
             // label22
             // 
             this.label22.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(457, 237);
+            this.label22.Location = new System.Drawing.Point(474, 239);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(17, 13);
             this.label22.TabIndex = 92;
@@ -513,7 +591,7 @@
             // 
             this.label23.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(457, 212);
+            this.label23.Location = new System.Drawing.Point(474, 214);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(17, 13);
             this.label23.TabIndex = 91;
@@ -523,64 +601,80 @@
             // 
             this.label24.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(457, 193);
+            this.label24.Location = new System.Drawing.Point(474, 195);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(41, 13);
+            this.label24.Size = new System.Drawing.Size(77, 13);
             this.label24.TabIndex = 90;
-            this.label24.Text = "label24";
+            this.label24.Text = "Delta Damping";
             // 
-            // noFocusTrackBar16
+            // mTrackBarX8
             // 
-            this.noFocusTrackBar16.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.noFocusTrackBar16.Location = new System.Drawing.Point(472, 207);
-            this.noFocusTrackBar16.Maximum = 100;
-            this.noFocusTrackBar16.Name = "noFocusTrackBar16";
-            this.noFocusTrackBar16.Size = new System.Drawing.Size(130, 45);
-            this.noFocusTrackBar16.TabIndex = 93;
-            this.noFocusTrackBar16.TickStyle = System.Windows.Forms.TickStyle.None;
+            this.mTrackBarX8.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.mTrackBarX8.Location = new System.Drawing.Point(489, 209);
+            this.mTrackBarX8.Maximum = 1000;
+            this.mTrackBarX8.Name = "mTrackBarX8";
+            this.mTrackBarX8.Size = new System.Drawing.Size(130, 45);
+            this.mTrackBarX8.TabIndex = 93;
+            this.mTrackBarX8.TickStyle = System.Windows.Forms.TickStyle.None;
             // 
-            // numericUpDown13
+            // mValueY6
             // 
-            this.numericUpDown13.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.numericUpDown13.Location = new System.Drawing.Point(608, 59);
-            this.numericUpDown13.Name = "numericUpDown13";
-            this.numericUpDown13.Size = new System.Drawing.Size(35, 20);
-            this.numericUpDown13.TabIndex = 89;
+            this.mValueY6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.mValueY6.DecimalPlaces = 3;
+            this.mValueY6.Enabled = false;
+            this.mValueY6.Increment = new decimal(new int[] {
+            10,
+            0,
+            0,
+            196608});
+            this.mValueY6.Location = new System.Drawing.Point(625, 59);
+            this.mValueY6.Name = "mValueY6";
+            this.mValueY6.Size = new System.Drawing.Size(53, 20);
+            this.mValueY6.TabIndex = 89;
             // 
-            // numericUpDown14
+            // mValueX6
             // 
-            this.numericUpDown14.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.numericUpDown14.Location = new System.Drawing.Point(608, 34);
-            this.numericUpDown14.Name = "numericUpDown14";
-            this.numericUpDown14.Size = new System.Drawing.Size(35, 20);
-            this.numericUpDown14.TabIndex = 88;
+            this.mValueX6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.mValueX6.DecimalPlaces = 3;
+            this.mValueX6.Increment = new decimal(new int[] {
+            10,
+            0,
+            0,
+            196608});
+            this.mValueX6.Location = new System.Drawing.Point(625, 34);
+            this.mValueX6.Name = "mValueX6";
+            this.mValueX6.Size = new System.Drawing.Size(53, 20);
+            this.mValueX6.TabIndex = 88;
             // 
-            // checkBox7
+            // checkBox6
             // 
-            this.checkBox7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.checkBox7.AutoSize = true;
-            this.checkBox7.Location = new System.Drawing.Point(460, 85);
-            this.checkBox7.Name = "checkBox7";
-            this.checkBox7.Size = new System.Drawing.Size(94, 17);
-            this.checkBox7.TabIndex = 87;
-            this.checkBox7.Text = "Maintain Ratio";
-            this.checkBox7.UseVisualStyleBackColor = true;
+            this.checkBox6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.checkBox6.AutoSize = true;
+            this.checkBox6.Checked = true;
+            this.checkBox6.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.checkBox6.Location = new System.Drawing.Point(477, 83);
+            this.checkBox6.Name = "checkBox6";
+            this.checkBox6.Size = new System.Drawing.Size(112, 17);
+            this.checkBox6.TabIndex = 87;
+            this.checkBox6.Text = "Maintain 1:1 Ratio";
+            this.checkBox6.UseVisualStyleBackColor = true;
             // 
-            // noFocusTrackBar13
+            // mTrackBarY6
             // 
-            this.noFocusTrackBar13.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.noFocusTrackBar13.Location = new System.Drawing.Point(472, 57);
-            this.noFocusTrackBar13.Maximum = 100;
-            this.noFocusTrackBar13.Name = "noFocusTrackBar13";
-            this.noFocusTrackBar13.Size = new System.Drawing.Size(130, 45);
-            this.noFocusTrackBar13.TabIndex = 86;
-            this.noFocusTrackBar13.TickStyle = System.Windows.Forms.TickStyle.None;
+            this.mTrackBarY6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.mTrackBarY6.Enabled = false;
+            this.mTrackBarY6.Location = new System.Drawing.Point(489, 57);
+            this.mTrackBarY6.Maximum = 1000;
+            this.mTrackBarY6.Name = "mTrackBarY6";
+            this.mTrackBarY6.Size = new System.Drawing.Size(130, 45);
+            this.mTrackBarY6.TabIndex = 86;
+            this.mTrackBarY6.TickStyle = System.Windows.Forms.TickStyle.None;
             // 
             // label19
             // 
             this.label19.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(457, 61);
+            this.label19.Location = new System.Drawing.Point(474, 61);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(17, 13);
             this.label19.TabIndex = 84;
@@ -590,7 +684,7 @@
             // 
             this.label20.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(457, 36);
+            this.label20.Location = new System.Drawing.Point(474, 36);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(17, 13);
             this.label20.TabIndex = 83;
@@ -600,64 +694,80 @@
             // 
             this.label21.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(457, 17);
+            this.label21.Location = new System.Drawing.Point(474, 17);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(41, 13);
+            this.label21.Size = new System.Drawing.Size(127, 13);
             this.label21.TabIndex = 82;
-            this.label21.Text = "label21";
+            this.label21.Text = "Delta-Stopping Threshold";
             // 
-            // noFocusTrackBar14
+            // mTrackBarX6
             // 
-            this.noFocusTrackBar14.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.noFocusTrackBar14.Location = new System.Drawing.Point(472, 31);
-            this.noFocusTrackBar14.Maximum = 100;
-            this.noFocusTrackBar14.Name = "noFocusTrackBar14";
-            this.noFocusTrackBar14.Size = new System.Drawing.Size(130, 45);
-            this.noFocusTrackBar14.TabIndex = 85;
-            this.noFocusTrackBar14.TickStyle = System.Windows.Forms.TickStyle.None;
+            this.mTrackBarX6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.mTrackBarX6.Location = new System.Drawing.Point(489, 31);
+            this.mTrackBarX6.Maximum = 1000;
+            this.mTrackBarX6.Name = "mTrackBarX6";
+            this.mTrackBarX6.Size = new System.Drawing.Size(130, 45);
+            this.mTrackBarX6.TabIndex = 85;
+            this.mTrackBarX6.TickStyle = System.Windows.Forms.TickStyle.None;
             // 
-            // numericUpDown11
+            // mValueY7
             // 
-            this.numericUpDown11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.numericUpDown11.Location = new System.Drawing.Point(608, 147);
-            this.numericUpDown11.Name = "numericUpDown11";
-            this.numericUpDown11.Size = new System.Drawing.Size(35, 20);
-            this.numericUpDown11.TabIndex = 81;
+            this.mValueY7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.mValueY7.DecimalPlaces = 3;
+            this.mValueY7.Enabled = false;
+            this.mValueY7.Increment = new decimal(new int[] {
+            10,
+            0,
+            0,
+            196608});
+            this.mValueY7.Location = new System.Drawing.Point(625, 147);
+            this.mValueY7.Name = "mValueY7";
+            this.mValueY7.Size = new System.Drawing.Size(53, 20);
+            this.mValueY7.TabIndex = 81;
             // 
-            // numericUpDown12
+            // mValueX7
             // 
-            this.numericUpDown12.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.numericUpDown12.Location = new System.Drawing.Point(608, 122);
-            this.numericUpDown12.Name = "numericUpDown12";
-            this.numericUpDown12.Size = new System.Drawing.Size(35, 20);
-            this.numericUpDown12.TabIndex = 80;
+            this.mValueX7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.mValueX7.DecimalPlaces = 3;
+            this.mValueX7.Increment = new decimal(new int[] {
+            10,
+            0,
+            0,
+            196608});
+            this.mValueX7.Location = new System.Drawing.Point(625, 122);
+            this.mValueX7.Name = "mValueX7";
+            this.mValueX7.Size = new System.Drawing.Size(53, 20);
+            this.mValueX7.TabIndex = 80;
             // 
-            // checkBox6
+            // checkBox7
             // 
-            this.checkBox6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.checkBox6.AutoSize = true;
-            this.checkBox6.Location = new System.Drawing.Point(460, 173);
-            this.checkBox6.Name = "checkBox6";
-            this.checkBox6.Size = new System.Drawing.Size(94, 17);
-            this.checkBox6.TabIndex = 79;
-            this.checkBox6.Text = "Maintain Ratio";
-            this.checkBox6.UseVisualStyleBackColor = true;
+            this.checkBox7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.checkBox7.AutoSize = true;
+            this.checkBox7.Checked = true;
+            this.checkBox7.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.checkBox7.Location = new System.Drawing.Point(477, 173);
+            this.checkBox7.Name = "checkBox7";
+            this.checkBox7.Size = new System.Drawing.Size(112, 17);
+            this.checkBox7.TabIndex = 79;
+            this.checkBox7.Text = "Maintain 1:1 Ratio";
+            this.checkBox7.UseVisualStyleBackColor = true;
             // 
-            // noFocusTrackBar11
+            // mTrackBarY7
             // 
-            this.noFocusTrackBar11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.noFocusTrackBar11.Location = new System.Drawing.Point(472, 145);
-            this.noFocusTrackBar11.Maximum = 100;
-            this.noFocusTrackBar11.Name = "noFocusTrackBar11";
-            this.noFocusTrackBar11.Size = new System.Drawing.Size(130, 45);
-            this.noFocusTrackBar11.TabIndex = 78;
-            this.noFocusTrackBar11.TickStyle = System.Windows.Forms.TickStyle.None;
+            this.mTrackBarY7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.mTrackBarY7.Enabled = false;
+            this.mTrackBarY7.Location = new System.Drawing.Point(489, 147);
+            this.mTrackBarY7.Maximum = 1000;
+            this.mTrackBarY7.Name = "mTrackBarY7";
+            this.mTrackBarY7.Size = new System.Drawing.Size(130, 45);
+            this.mTrackBarY7.TabIndex = 78;
+            this.mTrackBarY7.TickStyle = System.Windows.Forms.TickStyle.None;
             // 
             // label14
             // 
             this.label14.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(457, 149);
+            this.label14.Location = new System.Drawing.Point(474, 151);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(17, 13);
             this.label14.TabIndex = 76;
@@ -667,7 +777,7 @@
             // 
             this.label15.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(457, 124);
+            this.label15.Location = new System.Drawing.Point(474, 126);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(17, 13);
             this.label15.TabIndex = 75;
@@ -677,58 +787,74 @@
             // 
             this.label16.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(457, 105);
+            this.label16.Location = new System.Drawing.Point(474, 107);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(41, 13);
+            this.label16.Size = new System.Drawing.Size(107, 13);
             this.label16.TabIndex = 74;
-            this.label16.Text = "label16";
+            this.label16.Text = "Delta Damping Origin";
             // 
-            // noFocusTrackBar12
+            // mTrackBarX7
             // 
-            this.noFocusTrackBar12.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.noFocusTrackBar12.Location = new System.Drawing.Point(472, 119);
-            this.noFocusTrackBar12.Maximum = 100;
-            this.noFocusTrackBar12.Name = "noFocusTrackBar12";
-            this.noFocusTrackBar12.Size = new System.Drawing.Size(130, 45);
-            this.noFocusTrackBar12.TabIndex = 77;
-            this.noFocusTrackBar12.TickStyle = System.Windows.Forms.TickStyle.None;
+            this.mTrackBarX7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.mTrackBarX7.Location = new System.Drawing.Point(489, 121);
+            this.mTrackBarX7.Maximum = 1000;
+            this.mTrackBarX7.Name = "mTrackBarX7";
+            this.mTrackBarX7.Size = new System.Drawing.Size(130, 45);
+            this.mTrackBarX7.TabIndex = 77;
+            this.mTrackBarX7.TickStyle = System.Windows.Forms.TickStyle.None;
             // 
-            // numericUpDown9
+            // mValueY5
             // 
-            this.numericUpDown9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.numericUpDown9.Location = new System.Drawing.Point(154, 411);
-            this.numericUpDown9.Name = "numericUpDown9";
-            this.numericUpDown9.Size = new System.Drawing.Size(35, 20);
-            this.numericUpDown9.TabIndex = 73;
+            this.mValueY5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.mValueY5.DecimalPlaces = 3;
+            this.mValueY5.Enabled = false;
+            this.mValueY5.Increment = new decimal(new int[] {
+            10,
+            0,
+            0,
+            196608});
+            this.mValueY5.Location = new System.Drawing.Point(154, 411);
+            this.mValueY5.Name = "mValueY5";
+            this.mValueY5.Size = new System.Drawing.Size(53, 20);
+            this.mValueY5.TabIndex = 73;
             // 
-            // numericUpDown10
+            // mValueX5
             // 
-            this.numericUpDown10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.numericUpDown10.Location = new System.Drawing.Point(154, 386);
-            this.numericUpDown10.Name = "numericUpDown10";
-            this.numericUpDown10.Size = new System.Drawing.Size(35, 20);
-            this.numericUpDown10.TabIndex = 72;
+            this.mValueX5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.mValueX5.DecimalPlaces = 3;
+            this.mValueX5.Increment = new decimal(new int[] {
+            10,
+            0,
+            0,
+            196608});
+            this.mValueX5.Location = new System.Drawing.Point(154, 386);
+            this.mValueX5.Name = "mValueX5";
+            this.mValueX5.Size = new System.Drawing.Size(53, 20);
+            this.mValueX5.TabIndex = 72;
             // 
             // checkBox5
             // 
             this.checkBox5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.checkBox5.AutoSize = true;
+            this.checkBox5.Checked = true;
+            this.checkBox5.CheckState = System.Windows.Forms.CheckState.Checked;
             this.checkBox5.Location = new System.Drawing.Point(6, 437);
             this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(94, 17);
+            this.checkBox5.Size = new System.Drawing.Size(112, 17);
             this.checkBox5.TabIndex = 71;
-            this.checkBox5.Text = "Maintain Ratio";
+            this.checkBox5.Text = "Maintain 1:1 Ratio";
             this.checkBox5.UseVisualStyleBackColor = true;
             // 
-            // noFocusTrackBar9
+            // mTrackBarY5
             // 
-            this.noFocusTrackBar9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.noFocusTrackBar9.Location = new System.Drawing.Point(18, 409);
-            this.noFocusTrackBar9.Maximum = 100;
-            this.noFocusTrackBar9.Name = "noFocusTrackBar9";
-            this.noFocusTrackBar9.Size = new System.Drawing.Size(130, 45);
-            this.noFocusTrackBar9.TabIndex = 70;
-            this.noFocusTrackBar9.TickStyle = System.Windows.Forms.TickStyle.None;
+            this.mTrackBarY5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.mTrackBarY5.Enabled = false;
+            this.mTrackBarY5.Location = new System.Drawing.Point(18, 409);
+            this.mTrackBarY5.Maximum = 1000;
+            this.mTrackBarY5.Name = "mTrackBarY5";
+            this.mTrackBarY5.Size = new System.Drawing.Size(130, 45);
+            this.mTrackBarY5.TabIndex = 70;
+            this.mTrackBarY5.TickStyle = System.Windows.Forms.TickStyle.None;
             // 
             // label11
             // 
@@ -756,56 +882,93 @@
             this.label13.AutoSize = true;
             this.label13.Location = new System.Drawing.Point(3, 369);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(41, 13);
+            this.label13.Size = new System.Drawing.Size(59, 13);
             this.label13.TabIndex = 66;
-            this.label13.Text = "label13";
+            this.label13.Text = "Initial Delta";
             // 
-            // noFocusTrackBar10
+            // mTrackBarX5
             // 
-            this.noFocusTrackBar10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.noFocusTrackBar10.Location = new System.Drawing.Point(18, 383);
-            this.noFocusTrackBar10.Maximum = 100;
-            this.noFocusTrackBar10.Name = "noFocusTrackBar10";
-            this.noFocusTrackBar10.Size = new System.Drawing.Size(130, 45);
-            this.noFocusTrackBar10.TabIndex = 69;
-            this.noFocusTrackBar10.TickStyle = System.Windows.Forms.TickStyle.None;
+            this.mTrackBarX5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.mTrackBarX5.Location = new System.Drawing.Point(18, 383);
+            this.mTrackBarX5.Maximum = 1000;
+            this.mTrackBarX5.Name = "mTrackBarX5";
+            this.mTrackBarX5.Size = new System.Drawing.Size(130, 45);
+            this.mTrackBarX5.TabIndex = 69;
+            this.mTrackBarX5.TickStyle = System.Windows.Forms.TickStyle.None;
             // 
-            // numericUpDown7
+            // mValueY4
             // 
-            this.numericUpDown7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.numericUpDown7.Location = new System.Drawing.Point(154, 323);
-            this.numericUpDown7.Name = "numericUpDown7";
-            this.numericUpDown7.Size = new System.Drawing.Size(35, 20);
-            this.numericUpDown7.TabIndex = 65;
+            this.mValueY4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.mValueY4.DecimalPlaces = 3;
+            this.mValueY4.Enabled = false;
+            this.mValueY4.Increment = new decimal(new int[] {
+            10,
+            0,
+            0,
+            196608});
+            this.mValueY4.Location = new System.Drawing.Point(154, 323);
+            this.mValueY4.Maximum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.mValueY4.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            -2147483648});
+            this.mValueY4.Name = "mValueY4";
+            this.mValueY4.Size = new System.Drawing.Size(53, 20);
+            this.mValueY4.TabIndex = 65;
             // 
-            // numericUpDown8
+            // mValueX4
             // 
-            this.numericUpDown8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.numericUpDown8.Location = new System.Drawing.Point(154, 298);
-            this.numericUpDown8.Name = "numericUpDown8";
-            this.numericUpDown8.Size = new System.Drawing.Size(35, 20);
-            this.numericUpDown8.TabIndex = 64;
+            this.mValueX4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.mValueX4.DecimalPlaces = 3;
+            this.mValueX4.Increment = new decimal(new int[] {
+            10,
+            0,
+            0,
+            196608});
+            this.mValueX4.Location = new System.Drawing.Point(154, 298);
+            this.mValueX4.Maximum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.mValueX4.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            -2147483648});
+            this.mValueX4.Name = "mValueX4";
+            this.mValueX4.Size = new System.Drawing.Size(53, 20);
+            this.mValueX4.TabIndex = 64;
             // 
             // checkBox4
             // 
             this.checkBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.checkBox4.AutoSize = true;
+            this.checkBox4.Checked = true;
+            this.checkBox4.CheckState = System.Windows.Forms.CheckState.Checked;
             this.checkBox4.Location = new System.Drawing.Point(6, 349);
             this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(94, 17);
+            this.checkBox4.Size = new System.Drawing.Size(112, 17);
             this.checkBox4.TabIndex = 63;
-            this.checkBox4.Text = "Maintain Ratio";
+            this.checkBox4.Text = "Maintain 1:1 Ratio";
             this.checkBox4.UseVisualStyleBackColor = true;
             // 
-            // noFocusTrackBar7
+            // mTrackBarY4
             // 
-            this.noFocusTrackBar7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.noFocusTrackBar7.Location = new System.Drawing.Point(18, 321);
-            this.noFocusTrackBar7.Maximum = 100;
-            this.noFocusTrackBar7.Name = "noFocusTrackBar7";
-            this.noFocusTrackBar7.Size = new System.Drawing.Size(130, 45);
-            this.noFocusTrackBar7.TabIndex = 62;
-            this.noFocusTrackBar7.TickStyle = System.Windows.Forms.TickStyle.None;
+            this.mTrackBarY4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.mTrackBarY4.Enabled = false;
+            this.mTrackBarY4.Location = new System.Drawing.Point(18, 321);
+            this.mTrackBarY4.Maximum = 1000;
+            this.mTrackBarY4.Minimum = -1000;
+            this.mTrackBarY4.Name = "mTrackBarY4";
+            this.mTrackBarY4.Size = new System.Drawing.Size(130, 45);
+            this.mTrackBarY4.TabIndex = 62;
+            this.mTrackBarY4.TickStyle = System.Windows.Forms.TickStyle.None;
             // 
             // label8
             // 
@@ -833,56 +996,73 @@
             this.label10.AutoSize = true;
             this.label10.Location = new System.Drawing.Point(3, 281);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(41, 13);
+            this.label10.Size = new System.Drawing.Size(167, 13);
             this.label10.TabIndex = 58;
-            this.label10.Text = "label10";
+            this.label10.Text = "Delta Sensitivity Sigmoid Constant";
             // 
-            // noFocusTrackBar8
+            // mTrackBarX4
             // 
-            this.noFocusTrackBar8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.noFocusTrackBar8.Location = new System.Drawing.Point(18, 295);
-            this.noFocusTrackBar8.Maximum = 100;
-            this.noFocusTrackBar8.Name = "noFocusTrackBar8";
-            this.noFocusTrackBar8.Size = new System.Drawing.Size(130, 45);
-            this.noFocusTrackBar8.TabIndex = 61;
-            this.noFocusTrackBar8.TickStyle = System.Windows.Forms.TickStyle.None;
+            this.mTrackBarX4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.mTrackBarX4.Location = new System.Drawing.Point(18, 295);
+            this.mTrackBarX4.Maximum = 1000;
+            this.mTrackBarX4.Minimum = -1000;
+            this.mTrackBarX4.Name = "mTrackBarX4";
+            this.mTrackBarX4.Size = new System.Drawing.Size(130, 45);
+            this.mTrackBarX4.TabIndex = 61;
+            this.mTrackBarX4.TickStyle = System.Windows.Forms.TickStyle.None;
             // 
-            // numericUpDown5
+            // mValueY3
             // 
-            this.numericUpDown5.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.numericUpDown5.Location = new System.Drawing.Point(154, 235);
-            this.numericUpDown5.Name = "numericUpDown5";
-            this.numericUpDown5.Size = new System.Drawing.Size(35, 20);
-            this.numericUpDown5.TabIndex = 57;
+            this.mValueY3.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.mValueY3.DecimalPlaces = 3;
+            this.mValueY3.Enabled = false;
+            this.mValueY3.Increment = new decimal(new int[] {
+            10,
+            0,
+            0,
+            196608});
+            this.mValueY3.Location = new System.Drawing.Point(154, 235);
+            this.mValueY3.Name = "mValueY3";
+            this.mValueY3.Size = new System.Drawing.Size(53, 20);
+            this.mValueY3.TabIndex = 57;
             // 
-            // numericUpDown6
+            // mValueX3
             // 
-            this.numericUpDown6.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.numericUpDown6.Location = new System.Drawing.Point(154, 210);
-            this.numericUpDown6.Name = "numericUpDown6";
-            this.numericUpDown6.Size = new System.Drawing.Size(35, 20);
-            this.numericUpDown6.TabIndex = 56;
+            this.mValueX3.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.mValueX3.DecimalPlaces = 3;
+            this.mValueX3.Increment = new decimal(new int[] {
+            10,
+            0,
+            0,
+            196608});
+            this.mValueX3.Location = new System.Drawing.Point(154, 210);
+            this.mValueX3.Name = "mValueX3";
+            this.mValueX3.Size = new System.Drawing.Size(53, 20);
+            this.mValueX3.TabIndex = 56;
             // 
             // checkBox3
             // 
             this.checkBox3.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.checkBox3.AutoSize = true;
+            this.checkBox3.Checked = true;
+            this.checkBox3.CheckState = System.Windows.Forms.CheckState.Checked;
             this.checkBox3.Location = new System.Drawing.Point(6, 261);
             this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(94, 17);
+            this.checkBox3.Size = new System.Drawing.Size(112, 17);
             this.checkBox3.TabIndex = 55;
-            this.checkBox3.Text = "Maintain Ratio";
+            this.checkBox3.Text = "Maintain 1:1 Ratio";
             this.checkBox3.UseVisualStyleBackColor = true;
             // 
-            // noFocusTrackBar5
+            // mTrackBarY3
             // 
-            this.noFocusTrackBar5.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.noFocusTrackBar5.Location = new System.Drawing.Point(18, 233);
-            this.noFocusTrackBar5.Maximum = 100;
-            this.noFocusTrackBar5.Name = "noFocusTrackBar5";
-            this.noFocusTrackBar5.Size = new System.Drawing.Size(130, 45);
-            this.noFocusTrackBar5.TabIndex = 54;
-            this.noFocusTrackBar5.TickStyle = System.Windows.Forms.TickStyle.None;
+            this.mTrackBarY3.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.mTrackBarY3.Enabled = false;
+            this.mTrackBarY3.Location = new System.Drawing.Point(18, 233);
+            this.mTrackBarY3.Maximum = 1000;
+            this.mTrackBarY3.Name = "mTrackBarY3";
+            this.mTrackBarY3.Size = new System.Drawing.Size(130, 45);
+            this.mTrackBarY3.TabIndex = 54;
+            this.mTrackBarY3.TickStyle = System.Windows.Forms.TickStyle.None;
             // 
             // label5
             // 
@@ -910,52 +1090,78 @@
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(3, 193);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(35, 13);
+            this.label7.Size = new System.Drawing.Size(142, 13);
             this.label7.TabIndex = 50;
-            this.label7.Text = "label7";
+            this.label7.Text = "Mouse Delta Start Threshold";
             // 
-            // noFocusTrackBar6
+            // mTrackBarX3
             // 
-            this.noFocusTrackBar6.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.noFocusTrackBar6.Location = new System.Drawing.Point(18, 207);
-            this.noFocusTrackBar6.Maximum = 100;
-            this.noFocusTrackBar6.Name = "noFocusTrackBar6";
-            this.noFocusTrackBar6.Size = new System.Drawing.Size(130, 45);
-            this.noFocusTrackBar6.TabIndex = 53;
-            this.noFocusTrackBar6.TickStyle = System.Windows.Forms.TickStyle.None;
+            this.mTrackBarX3.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.mTrackBarX3.Location = new System.Drawing.Point(18, 207);
+            this.mTrackBarX3.Maximum = 1000;
+            this.mTrackBarX3.Name = "mTrackBarX3";
+            this.mTrackBarX3.Size = new System.Drawing.Size(130, 45);
+            this.mTrackBarX3.TabIndex = 53;
+            this.mTrackBarX3.TickStyle = System.Windows.Forms.TickStyle.None;
             // 
-            // numericUpDown3
+            // mValueY2
             // 
-            this.numericUpDown3.Location = new System.Drawing.Point(154, 147);
-            this.numericUpDown3.Name = "numericUpDown3";
-            this.numericUpDown3.Size = new System.Drawing.Size(35, 20);
-            this.numericUpDown3.TabIndex = 49;
+            this.mValueY2.DecimalPlaces = 3;
+            this.mValueY2.Enabled = false;
+            this.mValueY2.Increment = new decimal(new int[] {
+            10,
+            0,
+            0,
+            196608});
+            this.mValueY2.Location = new System.Drawing.Point(154, 147);
+            this.mValueY2.Maximum = new decimal(new int[] {
+            64,
+            0,
+            0,
+            0});
+            this.mValueY2.Name = "mValueY2";
+            this.mValueY2.Size = new System.Drawing.Size(53, 20);
+            this.mValueY2.TabIndex = 49;
             // 
-            // numericUpDown4
+            // mValueX2
             // 
-            this.numericUpDown4.Location = new System.Drawing.Point(154, 122);
-            this.numericUpDown4.Name = "numericUpDown4";
-            this.numericUpDown4.Size = new System.Drawing.Size(35, 20);
-            this.numericUpDown4.TabIndex = 48;
+            this.mValueX2.DecimalPlaces = 3;
+            this.mValueX2.Increment = new decimal(new int[] {
+            10,
+            0,
+            0,
+            196608});
+            this.mValueX2.Location = new System.Drawing.Point(154, 122);
+            this.mValueX2.Maximum = new decimal(new int[] {
+            64,
+            0,
+            0,
+            0});
+            this.mValueX2.Name = "mValueX2";
+            this.mValueX2.Size = new System.Drawing.Size(53, 20);
+            this.mValueX2.TabIndex = 48;
             // 
             // checkBox2
             // 
             this.checkBox2.AutoSize = true;
+            this.checkBox2.Checked = true;
+            this.checkBox2.CheckState = System.Windows.Forms.CheckState.Checked;
             this.checkBox2.Location = new System.Drawing.Point(6, 173);
             this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(94, 17);
+            this.checkBox2.Size = new System.Drawing.Size(112, 17);
             this.checkBox2.TabIndex = 47;
-            this.checkBox2.Text = "Maintain Ratio";
+            this.checkBox2.Text = "Maintain 1:1 Ratio";
             this.checkBox2.UseVisualStyleBackColor = true;
             // 
-            // noFocusTrackBar3
+            // mTrackBarY2
             // 
-            this.noFocusTrackBar3.Location = new System.Drawing.Point(18, 145);
-            this.noFocusTrackBar3.Maximum = 100;
-            this.noFocusTrackBar3.Name = "noFocusTrackBar3";
-            this.noFocusTrackBar3.Size = new System.Drawing.Size(130, 45);
-            this.noFocusTrackBar3.TabIndex = 46;
-            this.noFocusTrackBar3.TickStyle = System.Windows.Forms.TickStyle.None;
+            this.mTrackBarY2.Enabled = false;
+            this.mTrackBarY2.Location = new System.Drawing.Point(18, 145);
+            this.mTrackBarY2.Maximum = 64000;
+            this.mTrackBarY2.Name = "mTrackBarY2";
+            this.mTrackBarY2.Size = new System.Drawing.Size(130, 45);
+            this.mTrackBarY2.TabIndex = 46;
+            this.mTrackBarY2.TickStyle = System.Windows.Forms.TickStyle.None;
             // 
             // label1
             // 
@@ -980,51 +1186,77 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(3, 105);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(35, 13);
+            this.label3.Size = new System.Drawing.Size(116, 13);
             this.label3.TabIndex = 42;
-            this.label3.Text = "label3";
+            this.label3.Text = "Sensitivity with Sigmoid";
             // 
-            // noFocusTrackBar4
+            // mTrackBarX2
             // 
-            this.noFocusTrackBar4.Location = new System.Drawing.Point(18, 119);
-            this.noFocusTrackBar4.Maximum = 100;
-            this.noFocusTrackBar4.Name = "noFocusTrackBar4";
-            this.noFocusTrackBar4.Size = new System.Drawing.Size(130, 45);
-            this.noFocusTrackBar4.TabIndex = 45;
-            this.noFocusTrackBar4.TickStyle = System.Windows.Forms.TickStyle.None;
+            this.mTrackBarX2.Location = new System.Drawing.Point(18, 119);
+            this.mTrackBarX2.Maximum = 64000;
+            this.mTrackBarX2.Name = "mTrackBarX2";
+            this.mTrackBarX2.Size = new System.Drawing.Size(130, 45);
+            this.mTrackBarX2.TabIndex = 45;
+            this.mTrackBarX2.TickStyle = System.Windows.Forms.TickStyle.None;
             // 
-            // numericUpDown2
+            // mValueY1
             // 
-            this.numericUpDown2.Location = new System.Drawing.Point(154, 59);
-            this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(35, 20);
-            this.numericUpDown2.TabIndex = 41;
+            this.mValueY1.DecimalPlaces = 3;
+            this.mValueY1.Enabled = false;
+            this.mValueY1.Increment = new decimal(new int[] {
+            10,
+            0,
+            0,
+            196608});
+            this.mValueY1.Location = new System.Drawing.Point(154, 59);
+            this.mValueY1.Maximum = new decimal(new int[] {
+            64,
+            0,
+            0,
+            0});
+            this.mValueY1.Name = "mValueY1";
+            this.mValueY1.Size = new System.Drawing.Size(53, 20);
+            this.mValueY1.TabIndex = 41;
             // 
-            // numericUpDown1
+            // mValueX1
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(154, 34);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(35, 20);
-            this.numericUpDown1.TabIndex = 40;
+            this.mValueX1.DecimalPlaces = 3;
+            this.mValueX1.Increment = new decimal(new int[] {
+            10,
+            0,
+            0,
+            196608});
+            this.mValueX1.Location = new System.Drawing.Point(154, 34);
+            this.mValueX1.Maximum = new decimal(new int[] {
+            64,
+            0,
+            0,
+            0});
+            this.mValueX1.Name = "mValueX1";
+            this.mValueX1.Size = new System.Drawing.Size(53, 20);
+            this.mValueX1.TabIndex = 40;
             // 
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
+            this.checkBox1.Checked = true;
+            this.checkBox1.CheckState = System.Windows.Forms.CheckState.Checked;
             this.checkBox1.Location = new System.Drawing.Point(6, 85);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(94, 17);
+            this.checkBox1.Size = new System.Drawing.Size(112, 17);
             this.checkBox1.TabIndex = 39;
-            this.checkBox1.Text = "Maintain Ratio";
+            this.checkBox1.Text = "Maintain 1:1 Ratio";
             this.checkBox1.UseVisualStyleBackColor = true;
             // 
-            // noFocusTrackBar2
+            // mTrackBarY1
             // 
-            this.noFocusTrackBar2.Location = new System.Drawing.Point(18, 57);
-            this.noFocusTrackBar2.Maximum = 100;
-            this.noFocusTrackBar2.Name = "noFocusTrackBar2";
-            this.noFocusTrackBar2.Size = new System.Drawing.Size(130, 45);
-            this.noFocusTrackBar2.TabIndex = 38;
-            this.noFocusTrackBar2.TickStyle = System.Windows.Forms.TickStyle.None;
+            this.mTrackBarY1.Enabled = false;
+            this.mTrackBarY1.Location = new System.Drawing.Point(18, 57);
+            this.mTrackBarY1.Maximum = 64000;
+            this.mTrackBarY1.Name = "mTrackBarY1";
+            this.mTrackBarY1.Size = new System.Drawing.Size(130, 45);
+            this.mTrackBarY1.TabIndex = 38;
+            this.mTrackBarY1.TickStyle = System.Windows.Forms.TickStyle.None;
             // 
             // label17
             // 
@@ -1046,8 +1278,9 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox1.Location = new System.Drawing.Point(272, 359);
+            this.pictureBox1.Location = new System.Drawing.Point(368, 359);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(100, 100);
             this.pictureBox1.TabIndex = 20;
@@ -1058,24 +1291,84 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(3, 17);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(35, 13);
+            this.label4.Size = new System.Drawing.Size(54, 13);
             this.label4.TabIndex = 7;
-            this.label4.Text = "label4";
+            this.label4.Text = "Sensitivity";
             // 
-            // noFocusTrackBar1
+            // mTrackBarX1
             // 
-            this.noFocusTrackBar1.Location = new System.Drawing.Point(18, 31);
-            this.noFocusTrackBar1.Maximum = 100;
-            this.noFocusTrackBar1.Name = "noFocusTrackBar1";
-            this.noFocusTrackBar1.Size = new System.Drawing.Size(130, 45);
-            this.noFocusTrackBar1.TabIndex = 37;
-            this.noFocusTrackBar1.TickStyle = System.Windows.Forms.TickStyle.None;
+            this.mTrackBarX1.Location = new System.Drawing.Point(18, 31);
+            this.mTrackBarX1.Maximum = 64000;
+            this.mTrackBarX1.Name = "mTrackBarX1";
+            this.mTrackBarX1.Size = new System.Drawing.Size(130, 45);
+            this.mTrackBarX1.TabIndex = 37;
+            this.mTrackBarX1.TickStyle = System.Windows.Forms.TickStyle.None;
+            // 
+            // pComboBox
+            // 
+            this.pComboBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.pComboBox.FormattingEnabled = true;
+            this.pComboBox.Location = new System.Drawing.Point(267, 67);
+            this.pComboBox.Name = "pComboBox";
+            this.pComboBox.Size = new System.Drawing.Size(181, 21);
+            this.pComboBox.TabIndex = 114;
+            this.pComboBox.TextUpdate += new System.EventHandler(this.pComboBox_Update);
+            // 
+            // label31
+            // 
+            this.label31.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label31.AutoSize = true;
+            this.label31.Location = new System.Drawing.Point(264, 51);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(36, 13);
+            this.label31.TabIndex = 115;
+            this.label31.Text = "Profile";
+            // 
+            // button1
+            // 
+            this.button1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.button1.Location = new System.Drawing.Point(267, 90);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(61, 23);
+            this.button1.TabIndex = 116;
+            this.button1.Text = "Save";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.button2.Location = new System.Drawing.Point(327, 90);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(61, 23);
+            this.button2.TabIndex = 117;
+            this.button2.Text = "Load";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            this.button3.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.button3.Location = new System.Drawing.Point(387, 90);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(61, 23);
+            this.button3.TabIndex = 118;
+            this.button3.Text = "Delete";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // timer3
+            // 
+            this.timer3.Interval = 500;
+            this.timer3.Tick += new System.EventHandler(this.Timer3_Tick);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(678, 519);
+            this.ClientSize = new System.Drawing.Size(713, 519);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.label31);
+            this.Controls.Add(this.pComboBox);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.tabControl1);
             this.Name = "Form1";
@@ -1086,48 +1379,49 @@
             this.tabControl1.ResumeLayout(false);
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown19)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown20)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.noFocusTrackBar19)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.noFocusTrackBar20)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown17)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown18)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.noFocusTrackBar17)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.noFocusTrackBar18)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown15)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown16)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.noFocusTrackBar15)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.noFocusTrackBar16)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown13)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown14)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.noFocusTrackBar13)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.noFocusTrackBar14)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown12)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.noFocusTrackBar11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.noFocusTrackBar12)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.noFocusTrackBar9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.noFocusTrackBar10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.noFocusTrackBar7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.noFocusTrackBar8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.noFocusTrackBar5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.noFocusTrackBar6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.noFocusTrackBar3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.noFocusTrackBar4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.noFocusTrackBar2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mValueY10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mValueX10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mTrackBarY10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mTrackBarX10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mValueY9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mValueX9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mTrackBarY9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mTrackBarX9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mValueY8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mValueX8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mTrackBarY8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mTrackBarX8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mValueY6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mValueX6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mTrackBarY6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mTrackBarX6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mValueY7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mValueX7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mTrackBarY7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mTrackBarX7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mValueY5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mValueX5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mTrackBarY5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mTrackBarX5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mValueY4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mValueX4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mTrackBarY4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mTrackBarX4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mValueY3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mValueX3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mTrackBarY3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mTrackBarX3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mValueY2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mValueX2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mTrackBarY2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mTrackBarX2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mValueY1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mValueX1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mTrackBarY1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.noFocusTrackBar1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mTrackBarX1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -1143,83 +1437,90 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label18;
-        private SwitchKBMEmulator.NoFocusTrackBar noFocusTrackBar1;
-        private SwitchKBMEmulator.NoFocusTrackBar noFocusTrackBar2;
-        private System.Windows.Forms.NumericUpDown numericUpDown19;
-        private System.Windows.Forms.NumericUpDown numericUpDown20;
+        private SwitchKBMEmulator.NoFocusTrackBar mTrackBarX1;
+        private SwitchKBMEmulator.NoFocusTrackBar mTrackBarY1;
+        private System.Windows.Forms.NumericUpDown mValueY10;
+        private System.Windows.Forms.NumericUpDown mValueX10;
         private System.Windows.Forms.CheckBox checkBox10;
-        private SwitchKBMEmulator.NoFocusTrackBar noFocusTrackBar19;
+        private SwitchKBMEmulator.NoFocusTrackBar mTrackBarY10;
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.Label label29;
         private System.Windows.Forms.Label label30;
-        private SwitchKBMEmulator.NoFocusTrackBar noFocusTrackBar20;
-        private System.Windows.Forms.NumericUpDown numericUpDown17;
-        private System.Windows.Forms.NumericUpDown numericUpDown18;
+        private SwitchKBMEmulator.NoFocusTrackBar mTrackBarX10;
+        private System.Windows.Forms.NumericUpDown mValueY9;
+        private System.Windows.Forms.NumericUpDown mValueX9;
         private System.Windows.Forms.CheckBox checkBox9;
-        private SwitchKBMEmulator.NoFocusTrackBar noFocusTrackBar17;
+        private SwitchKBMEmulator.NoFocusTrackBar mTrackBarY9;
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.Label label27;
-        private SwitchKBMEmulator.NoFocusTrackBar noFocusTrackBar18;
-        private System.Windows.Forms.NumericUpDown numericUpDown15;
-        private System.Windows.Forms.NumericUpDown numericUpDown16;
+        private SwitchKBMEmulator.NoFocusTrackBar mTrackBarX9;
+        private System.Windows.Forms.NumericUpDown mValueY8;
+        private System.Windows.Forms.NumericUpDown mValueX8;
         private System.Windows.Forms.CheckBox checkBox8;
-        private SwitchKBMEmulator.NoFocusTrackBar noFocusTrackBar15;
+        private SwitchKBMEmulator.NoFocusTrackBar mTrackBarY8;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label label24;
-        private SwitchKBMEmulator.NoFocusTrackBar noFocusTrackBar16;
-        private System.Windows.Forms.NumericUpDown numericUpDown13;
-        private System.Windows.Forms.NumericUpDown numericUpDown14;
-        private System.Windows.Forms.CheckBox checkBox7;
-        private SwitchKBMEmulator.NoFocusTrackBar noFocusTrackBar13;
+        private SwitchKBMEmulator.NoFocusTrackBar mTrackBarX8;
+        private System.Windows.Forms.NumericUpDown mValueY6;
+        private System.Windows.Forms.NumericUpDown mValueX6;
+        private System.Windows.Forms.CheckBox checkBox6;
+        private SwitchKBMEmulator.NoFocusTrackBar mTrackBarY6;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label21;
-        private SwitchKBMEmulator.NoFocusTrackBar noFocusTrackBar14;
-        private System.Windows.Forms.NumericUpDown numericUpDown11;
-        private System.Windows.Forms.NumericUpDown numericUpDown12;
-        private System.Windows.Forms.CheckBox checkBox6;
-        private SwitchKBMEmulator.NoFocusTrackBar noFocusTrackBar11;
+        private SwitchKBMEmulator.NoFocusTrackBar mTrackBarX6;
+        private System.Windows.Forms.NumericUpDown mValueY7;
+        private System.Windows.Forms.NumericUpDown mValueX7;
+        private System.Windows.Forms.CheckBox checkBox7;
+        private SwitchKBMEmulator.NoFocusTrackBar mTrackBarY7;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label16;
-        private SwitchKBMEmulator.NoFocusTrackBar noFocusTrackBar12;
-        private System.Windows.Forms.NumericUpDown numericUpDown9;
-        private System.Windows.Forms.NumericUpDown numericUpDown10;
+        private SwitchKBMEmulator.NoFocusTrackBar mTrackBarX7;
+        private System.Windows.Forms.NumericUpDown mValueY5;
+        private System.Windows.Forms.NumericUpDown mValueX5;
         private System.Windows.Forms.CheckBox checkBox5;
-        private SwitchKBMEmulator.NoFocusTrackBar noFocusTrackBar9;
+        private SwitchKBMEmulator.NoFocusTrackBar mTrackBarY5;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
-        private SwitchKBMEmulator.NoFocusTrackBar noFocusTrackBar10;
-        private System.Windows.Forms.NumericUpDown numericUpDown7;
-        private System.Windows.Forms.NumericUpDown numericUpDown8;
+        private SwitchKBMEmulator.NoFocusTrackBar mTrackBarX5;
+        private System.Windows.Forms.NumericUpDown mValueY4;
+        private System.Windows.Forms.NumericUpDown mValueX4;
         private System.Windows.Forms.CheckBox checkBox4;
-        private SwitchKBMEmulator.NoFocusTrackBar noFocusTrackBar7;
+        private SwitchKBMEmulator.NoFocusTrackBar mTrackBarY4;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
-        private SwitchKBMEmulator.NoFocusTrackBar noFocusTrackBar8;
-        private System.Windows.Forms.NumericUpDown numericUpDown5;
-        private System.Windows.Forms.NumericUpDown numericUpDown6;
+        private SwitchKBMEmulator.NoFocusTrackBar mTrackBarX4;
+        private System.Windows.Forms.NumericUpDown mValueY3;
+        private System.Windows.Forms.NumericUpDown mValueX3;
         private System.Windows.Forms.CheckBox checkBox3;
-        private SwitchKBMEmulator.NoFocusTrackBar noFocusTrackBar5;
+        private SwitchKBMEmulator.NoFocusTrackBar mTrackBarY3;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private SwitchKBMEmulator.NoFocusTrackBar noFocusTrackBar6;
-        private System.Windows.Forms.NumericUpDown numericUpDown3;
-        private System.Windows.Forms.NumericUpDown numericUpDown4;
+        private SwitchKBMEmulator.NoFocusTrackBar mTrackBarX3;
+        private System.Windows.Forms.NumericUpDown mValueY2;
+        private System.Windows.Forms.NumericUpDown mValueX2;
         private System.Windows.Forms.CheckBox checkBox2;
-        private SwitchKBMEmulator.NoFocusTrackBar noFocusTrackBar3;
+        private SwitchKBMEmulator.NoFocusTrackBar mTrackBarY2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private SwitchKBMEmulator.NoFocusTrackBar noFocusTrackBar4;
-        private System.Windows.Forms.NumericUpDown numericUpDown2;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private SwitchKBMEmulator.NoFocusTrackBar mTrackBarX2;
+        private System.Windows.Forms.NumericUpDown mValueY1;
+        private System.Windows.Forms.NumericUpDown mValueX1;
         private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label31;
+        private System.Windows.Forms.ComboBox pComboBox;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.CheckBox circleTestCheck;
+        private System.Windows.Forms.Timer timer3;
     }
 }
 

@@ -22,5 +22,17 @@ namespace SwitchKBMEmulator.Properties {
                 return defaultInstance;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("Default")]
+        public string Profile {
+            get {
+                return ((string)(this["Profile"]));
+            }
+            set {
+                this["Profile"] = value;
+            }
+        }
     }
 }
