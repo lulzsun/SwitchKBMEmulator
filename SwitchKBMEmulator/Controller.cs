@@ -10,7 +10,7 @@ namespace SwitchKBMEmulator
 {
     class Controller
     {
-        public class None
+        public struct None
         {
             public const int ID = 0;
             public static bool pressed = false;
@@ -18,71 +18,109 @@ namespace SwitchKBMEmulator
         public class Y
         {
             public const int ID = 1;
+            public static Key bind = Key.Y;
             public static bool pressed = false;
         };
         public class B
         {
             public const int ID = 2;
+            public static Object bind = Key.Space;
             public static bool pressed = false;
         };
         public class A
         {
             public const int ID = 4;
+            public static Object bind = Key.E;
             public static bool pressed = false;
         };
         public class X
         {
             public const int ID = 8;
+            public static Object bind = Key.M;
+            public static bool pressed = false;
+        };
+        public class Up
+        {
+            public const int ID = 0;
+            public static Object bind = Key.Up;
+            public static bool pressed = false;
+        };
+        public class Down
+        {
+            public const int ID = 4;
+            public static Object bind = Key.Down;
+            public static bool pressed = false;
+        };
+        public class Left
+        {
+            public const int ID = 6;
+            public static Object bind = Key.Left;
+            public static bool pressed = false;
+        };
+        public class Right
+        {
+            public const int ID = 2;
+            public static Object bind = Key.Right;
             public static bool pressed = false;
         };
         public class L
         {
             public const int ID = 16;
-            public bool pressed = false;
+            public static Object bind = Key.Q;
+            public static bool pressed = false;
         };
         public class R
         {
             public const int ID = 32;
+            public static Object bind = Key.G;
             public static bool pressed = false;
         };
         public class ZL
         {
             public const int ID = 64;
+            public static Object bind = MouseButtons.Left;
             public static bool pressed = false;
         };
         public class ZR
         {
             public const int ID = 128;
+            public static Object bind = Key.End;
             public static bool pressed = false;
         };
         public class Minus
         {
             public const int ID = 256;
+            public static Object bind = Key.O;
             public static bool pressed = false;
         };
         public class Plus
         {
             public const int ID = 512;
+            public static Object bind = Key.P;
             public static bool pressed = false;
         };
         public class L3
         {
             public const int ID = 1024;
+            public static Object bind = Key.C;
             public static bool pressed = false;
         };
         public class R3
         {
             public const int ID = 2048;
+            public static Object bind = Key.Z;
             public static bool pressed = false;
         };
         public class Home
         {
             public const int ID = 4096;
+            public static Object bind = Key.PageUp;
             public static bool pressed = false;
         };
         public class Share
         {
             public const int ID = 8192;
+            public static Object bind = Key.PageDown;
             public static bool pressed = false;
         };
 
@@ -104,14 +142,6 @@ namespace SwitchKBMEmulator
                 Point m_translation = mouseTranslation.Translate(Mouse.Position, center);
                 var x = m_translation.X;
                 var y = m_translation.Y;
-
-                //var x = (int)(sens * Math.Pow((Mouse.Position.X - center.X), exp)) + 128;
-                //var y = (int)(sens * Math.Pow((Mouse.Position.Y - center.Y), exp)) + 128;
-
-                //var x = (int)((Mouse.Position.X - center.X)*sens) + 128;
-                //var y = (int)((Mouse.Position.Y - center.Y)*sens) + 128; //deadzone is +-20
-
-                //Console.WriteLine(x + ", " + y);
 
                 if (x > 255)
                 {
@@ -159,6 +189,7 @@ namespace SwitchKBMEmulator
 
         Point circlePosition = new Point(0, 0);
         int circleCount = 1;
+        //not really a functional test
         public void CircleTest(SwitchInputSink sink)
         {
             Point m_translation = mouseTranslation.Translate(circlePosition, new Point(0, 0));
@@ -226,246 +257,404 @@ namespace SwitchKBMEmulator
             sink.Update(InputFrame.ParseInputString("RY=" + y));
         }
 
+        public bool KeyBindDown(Object bind)
+        {
+            if (bind.GetType().ToString() == "System.Windows.Input.Key")
+            {
+                if (Keyboard.IsKeyDown((Key)bind))
+                    return true;
+            }
+            else if (bind.GetType().ToString() == "System.Windows.Forms.MouseButtons")
+            {
+                if ((Control.MouseButtons & MouseButtons.Left) == (MouseButtons)bind)
+                    return true;
+            }
+            return false;
+        }
 
         bool l_left, l_right, l_up, l_down, walk;
         int walk_modifier = 0;
         public void KeyBoardUpdate(SwitchInputSink sink)
         {
-            //--------------- ZR BUTTON / SHOOT ---------------
-            if ((Control.MouseButtons & MouseButtons.Left) == MouseButtons.Left)
+            //--------------- Y BUTTON ---------------
+            if (KeyBindDown(Y.bind))
             {
-                if (!Controller.ZR.pressed)
+                if (!Y.pressed)
                 {
-                    sink.Update(InputFrame.ParseInputString("P=" + Controller.ZR.ID));
-                    Controller.ZR.pressed = true;
-                    Console.WriteLine("ZR");
-                }
-            }
-            else if (((Control.MouseButtons & MouseButtons.Left) != MouseButtons.Left) && Controller.ZR.pressed)
-            {
-                Controller.ZR.pressed = false;
-                sink.Update(InputFrame.ParseInputString("R=" + Controller.ZR.ID));
-            }
-
-            //--------------- A BUTTON ---------------
-            if (Keyboard.IsKeyDown(Key.E))
-            {
-                if (!Controller.A.pressed)
-                {
-                    sink.Update(InputFrame.ParseInputString("P=" + Controller.A.ID));
-                    Controller.A.pressed = true;
+                    sink.Update(InputFrame.ParseInputString("P=" + A.ID));
+                    Y.pressed = true;
                     Console.WriteLine("A");
                 }
             }
-            else if (Keyboard.IsKeyUp(Key.E) && Controller.A.pressed)
+            else if (!KeyBindDown(Y.bind) && Y.pressed)
             {
-                Controller.A.pressed = false;
-                sink.Update(InputFrame.ParseInputString("R=" + Controller.A.ID));
+                Y.pressed = false;
+                sink.Update(InputFrame.ParseInputString("R=" + Y.ID));
             }
 
             //--------------- B BUTTON / JUMP ---------------
-            if (Keyboard.IsKeyDown(Key.Space))
+            if (KeyBindDown(B.bind))
             {
-                if (!Controller.B.pressed)
+                if (!B.pressed)
                 {
-                    sink.Update(InputFrame.ParseInputString("P=" + Controller.B.ID));
-                    Controller.B.pressed = true;
+                    sink.Update(InputFrame.ParseInputString("P=" + B.ID));
+                    B.pressed = true;
                     Console.WriteLine("B");
                 }
             }
-            else if (Keyboard.IsKeyUp(Key.Space) && Controller.B.pressed)
+            else if (!KeyBindDown(B.bind) && B.pressed)
             {
-                Controller.B.pressed = false;
-                sink.Update(InputFrame.ParseInputString("R=" + Controller.B.ID));
+                B.pressed = false;
+                sink.Update(InputFrame.ParseInputString("R=" + B.ID));
+            }
+
+            //--------------- A BUTTON ---------------
+            if (KeyBindDown(A.bind))
+            {
+                if (!A.pressed)
+                {
+                    sink.Update(InputFrame.ParseInputString("P=" + A.ID));
+                    A.pressed = true;
+                    Console.WriteLine("A");
+                }
+            }
+            else if (!KeyBindDown(A.bind) && A.pressed)
+            {
+                A.pressed = false;
+                sink.Update(InputFrame.ParseInputString("R=" + A.ID));
             }
 
             //--------------- X BUTTON / MAP ---------------
-            if (Keyboard.IsKeyDown(Key.M))
+            if (KeyBindDown(X.bind))
             {
-                if (!Controller.X.pressed)
+                if (!X.pressed)
                 {
-                    sink.Update(InputFrame.ParseInputString("P=" + Controller.X.ID));
-                    Controller.X.pressed = true;
+                    sink.Update(InputFrame.ParseInputString("P=" + X.ID));
+                    X.pressed = true;
                     Console.WriteLine("X");
                 }
             }
-            else if (Keyboard.IsKeyUp(Key.M) && Controller.X.pressed)
+            else if (!KeyBindDown(X.bind) && X.pressed)
             {
-                Controller.X.pressed = false;
-                sink.Update(InputFrame.ParseInputString("R=" + Controller.X.ID));
+                X.pressed = false;
+                sink.Update(InputFrame.ParseInputString("R=" + X.ID));
             }
 
-            //--------------- ZL BUTTON / SQUID FORM/RUN ---------------
-            if (Keyboard.IsKeyDown(Key.LeftShift))
+            //--------------- L BUTTON ---------------
+            if (KeyBindDown(L.bind))
             {
-                if (!Controller.ZL.pressed)
+                if (!L.pressed)
                 {
-                    sink.Update(InputFrame.ParseInputString("P=" + Controller.ZL.ID));
-                    Controller.ZL.pressed = true;
-                    Console.WriteLine("ZL");
+                    sink.Update(InputFrame.ParseInputString("P=" + L.ID));
+                    L.pressed = true;
+                    Console.WriteLine("L");
                 }
             }
-            else if (Keyboard.IsKeyUp(Key.LeftShift) && Controller.ZL.pressed)
+            else if (!KeyBindDown(L.bind) && L.pressed)
             {
-                Controller.ZL.pressed = false;
-                sink.Update(InputFrame.ParseInputString("R=" + Controller.ZL.ID));
+                L.pressed = false;
+                sink.Update(InputFrame.ParseInputString("R=" + L.ID));
             }
 
-            //--------------- R BUTTON / SUB WEAPON ---------------
-            if (Keyboard.IsKeyDown(Key.G))
+            //--------------- R BUTTON ---------------
+            if (KeyBindDown(R.bind))
             {
-                if (!Controller.R.pressed)
+                if (!R.pressed)
                 {
-                    sink.Update(InputFrame.ParseInputString("P=" + Controller.R.ID));
-                    Controller.R.pressed = true;
+                    sink.Update(InputFrame.ParseInputString("P=" + R.ID));
+                    R.pressed = true;
                     Console.WriteLine("R");
                 }
             }
-            else if (Keyboard.IsKeyUp(Key.G) && Controller.R.pressed)
+            else if (!KeyBindDown(R.bind) && R.pressed)
             {
-                Controller.R.pressed = false;
-                sink.Update(InputFrame.ParseInputString("R=" + Controller.R.ID));
+                R.pressed = false;
+                sink.Update(InputFrame.ParseInputString("R=" + R.ID));
+            }
+
+            //--------------- ZL BUTTON / SQUID FORM/RUN ---------------
+            if (KeyBindDown(ZL.bind))
+            {
+                if (!ZL.pressed)
+                {
+                    sink.Update(InputFrame.ParseInputString("P=" + ZL.ID));
+                    ZL.pressed = true;
+                    Console.WriteLine("ZL");
+                }
+            }
+            else if (!KeyBindDown(ZL.bind) && ZL.pressed)
+            {
+                ZL.pressed = false;
+                sink.Update(InputFrame.ParseInputString("R=" + ZL.ID));
+            }
+
+            //--------------- ZR BUTTON / SHOOT ---------------
+            if (KeyBindDown(ZR.bind))
+            {
+                if (!ZR.pressed)
+                {
+                    sink.Update(InputFrame.ParseInputString("P=" + ZR.ID));
+                    ZR.pressed = true;
+                    Console.WriteLine("ZR");
+                }
+            }
+            else if (!KeyBindDown(ZR.bind) && ZR.pressed)
+            {
+                ZR.pressed = false;
+                sink.Update(InputFrame.ParseInputString("R=" + ZR.ID));
+            }
+
+            //--------------- L3 BUTTON ---------------
+            if (KeyBindDown(L3.bind))
+            {
+                if (!L3.pressed)
+                {
+                    sink.Update(InputFrame.ParseInputString("P=" + L3.ID));
+                    L3.pressed = true;
+                    Console.WriteLine("L3");
+                }
+            }
+            else if (!KeyBindDown(L3.bind) && L3.pressed)
+            {
+                L3.pressed = false;
+                sink.Update(InputFrame.ParseInputString("R=" + L3.ID));
             }
 
             //--------------- R3 BUTTON / SPECIAL WEAPON ---------------
-            if (Keyboard.IsKeyDown(Key.Z))
+            if (KeyBindDown(R3.bind))
             {
-                if (!Controller.R3.pressed)
+                if (!R3.pressed)
                 {
-                    sink.Update(InputFrame.ParseInputString("P=" + Controller.R3.ID));
-                    Controller.R3.pressed = true;
+                    sink.Update(InputFrame.ParseInputString("P=" + R3.ID));
+                    R3.pressed = true;
                     Console.WriteLine("R3");
                 }
             }
-            else if (Keyboard.IsKeyUp(Key.Z) && Controller.R3.pressed)
+            else if (!KeyBindDown(R3.bind) && R3.pressed)
             {
-                Controller.R3.pressed = false;
-                sink.Update(InputFrame.ParseInputString("R=" + Controller.R3.ID));
+                R3.pressed = false;
+                sink.Update(InputFrame.ParseInputString("R=" + R3.ID));
+            }
+
+            //--------------- HOME BUTTON ---------------
+            if (KeyBindDown(Home.bind))
+            {
+                if (!Home.pressed)
+                {
+                    sink.Update(InputFrame.ParseInputString("P=" + Home.ID));
+                    Home.pressed = true;
+                    Console.WriteLine("HOME");
+                }
+            }
+            else if (!KeyBindDown(Home.bind) && Home.pressed)
+            {
+                Home.pressed = false;
+                sink.Update(InputFrame.ParseInputString("R=" + Home.ID));
+            }
+
+            //--------------- SHARE BUTTON ---------------
+            if (KeyBindDown(Share.bind))
+            {
+                if (!Share.pressed)
+                {
+                    sink.Update(InputFrame.ParseInputString("P=" + Share.ID));
+                    Share.pressed = true;
+                    Console.WriteLine("SHARE");
+                }
+            }
+            else if (!KeyBindDown(Share.bind) && Share.pressed)
+            {
+                Share.pressed = false;
+                sink.Update(InputFrame.ParseInputString("R=" + Share.ID));
             }
 
             //--------------- WALK MODIFIER ---------------
-            //if (Keyboard.IsKeyDown(Key.LeftCtrl))
+            //if (KeyBindDown(Key.LeftCtrl))
             //{
             //    if (!walk)
             //    {
             //        walk_modifier = 32;
 
-            //        if (Keyboard.IsKeyDown(Key.W) && l_up)
+            //        if (KeyBindDown(Key.W) && l_up)
             //        {
             //            sink.Update(InputFrame.ParseInputString("LY=" + (0 + walk_modifier)));
             //        }
-            //        else if (Keyboard.IsKeyDown(Key.S) && l_down)
+            //        else if (KeyBindDown(Key.S) && l_down)
             //        {
             //            sink.Update(InputFrame.ParseInputString("LY=" + (255 - walk_modifier)));
             //        }
 
 
-            //        if (Keyboard.IsKeyDown(Key.A) && l_left)
+            //        if (KeyBindDown(Key.A) && l_left)
             //        {
             //            sink.Update(InputFrame.ParseInputString("LX=" + (0 + walk_modifier)));
             //        }
-            //        else if (Keyboard.IsKeyDown(Key.D) && l_right)
+            //        else if (KeyBindDown(Key.D) && l_right)
             //        {
             //            sink.Update(InputFrame.ParseInputString("LX=" + (255 - walk_modifier)));
             //        }
             //    }
             //    walk = true;
             //}
-            //else if (Keyboard.IsKeyUp(Key.LeftCtrl) && walk)
+            //else if (!KeyBindDown(Key.LeftCtrl) && walk)
             //{
             //    walk = false;
             //    walk_modifier = 0;
             //    Console.WriteLine("WALK UP");
             //}
 
-            //--------------- UP ---------------
-            if (Keyboard.IsKeyDown(Key.W) && !l_up)
+            //--------------- DPAD UP BUTTON ---------------
+            if (KeyBindDown(Up.bind))
             {
-                if (Keyboard.IsKeyDown(Key.S) || l_down)
+                if (!Up.pressed)
+                {
+                    sink.Update(InputFrame.ParseInputString("D=" + Up.ID));
+                    Up.pressed = true;
+                    Console.WriteLine("UP");
+                }
+            }
+            else if (!KeyBindDown(Up.bind) && Up.pressed)
+            {
+                Up.pressed = false;
+                sink.Update(InputFrame.ParseInputString("D=8"));
+            }
+
+            //--------------- DPAD DOWN BUTTON ---------------
+            if (KeyBindDown(Down.bind))
+            {
+                if (!Down.pressed)
+                {
+                    sink.Update(InputFrame.ParseInputString("D=" + Down.ID));
+                    Down.pressed = true;
+                    Console.WriteLine("DOWN");
+                }
+            }
+            else if (!KeyBindDown(Down.bind) && Down.pressed)
+            {
+                Down.pressed = false;
+                sink.Update(InputFrame.ParseInputString("D=8"));
+            }
+
+            //--------------- DPAD LEFT BUTTON ---------------
+            if (KeyBindDown(Left.bind))
+            {
+                if (!Left.pressed)
+                {
+                    sink.Update(InputFrame.ParseInputString("D=" + Left.ID));
+                    Left.pressed = true;
+                    Console.WriteLine("LEFT");
+                }
+            }
+            else if (!KeyBindDown(Left.bind) && Left.pressed)
+            {
+                Left.pressed = false;
+                sink.Update(InputFrame.ParseInputString("D=8"));
+            }
+
+            //--------------- DPAD RIGHT BUTTON ---------------
+            if (KeyBindDown(Right.bind))
+            {
+                if (!Right.pressed)
+                {
+                    sink.Update(InputFrame.ParseInputString("D=" + Right.ID));
+                    Right.pressed = true;
+                    Console.WriteLine("RIGHT");
+                }
+            }
+            else if (!KeyBindDown(Right.bind) && Right.pressed)
+            {
+                Right.pressed = false;
+                sink.Update(InputFrame.ParseInputString("D=8"));
+            }
+
+            //--------------- UP ---------------
+            if (KeyBindDown(Key.W) && !l_up)
+            {
+                if (KeyBindDown(Key.S) || l_down)
                 {
                     l_down = true;
                 }
-                if (Keyboard.IsKeyDown(Key.W))
+                if (KeyBindDown(Key.W))
                 {
                     sink.Update(InputFrame.ParseInputString("LY=" + (0 + walk_modifier)));
                     Console.WriteLine("L_UP");
                 }
                 l_up = true;
             }
-            else if (Keyboard.IsKeyUp(Key.W) && l_up)
+            else if (!KeyBindDown(Key.W) && l_up)
             {
                 l_up = false;
-                if (Keyboard.IsKeyUp(Key.W))
+                if (!KeyBindDown(Key.W))
                     sink.Update(InputFrame.ParseInputString("LY=128"));
                 else
                     l_down = false;
             }
 
             //--------------- DOWN ---------------
-            if (Keyboard.IsKeyDown(Key.S) && !l_down)
+            if (KeyBindDown(Key.S) && !l_down)
             {
-                if (Keyboard.IsKeyDown(Key.W) || l_up)
+                if (KeyBindDown(Key.W) || l_up)
                 {
                     l_up = true;
                 }
-                if (Keyboard.IsKeyDown(Key.S))
+                if (KeyBindDown(Key.S))
                 {
                     sink.Update(InputFrame.ParseInputString("LY=" + (255 - walk_modifier)));
                     Console.WriteLine("L_DOWN");
                 }
                 l_down = true;
             }
-            else if (Keyboard.IsKeyUp(Key.S) && l_down)
+            else if (!KeyBindDown(Key.S) && l_down)
             {
                 l_down = false;
-                if (Keyboard.IsKeyUp(Key.W))
+                if (!KeyBindDown(Key.W))
                     sink.Update(InputFrame.ParseInputString("LY=128"));
                 else
                     l_up = false;
             }
 
             //--------------- LEFT ---------------
-            if (Keyboard.IsKeyDown(Key.A) && !l_left)
+            if (KeyBindDown(Key.A) && !l_left)
             {
-                if (Keyboard.IsKeyDown(Key.D) || l_right)
+                if (KeyBindDown(Key.D) || l_right)
                 {
                     l_right = true;
                 }
-                if (Keyboard.IsKeyDown(Key.A))
+                if (KeyBindDown(Key.A))
                 {
                     sink.Update(InputFrame.ParseInputString("LX=" + (0 + walk_modifier)));
                     Console.WriteLine("L_LEFT");
                 }
                 l_left = true;
             }
-            else if (Keyboard.IsKeyUp(Key.A) && l_left)
+            else if (!KeyBindDown(Key.A) && l_left)
             {
                 l_left = false;
-                if (Keyboard.IsKeyUp(Key.D))
+                if (!KeyBindDown(Key.D))
                     sink.Update(InputFrame.ParseInputString("LX=128"));
                 else
                     l_right = false;
             }
 
             //--------------- RIGHT ---------------
-            if (Keyboard.IsKeyDown(Key.D) && !l_right)
+            if (KeyBindDown(Key.D) && !l_right)
             {
-                if (Keyboard.IsKeyDown(Key.A) || l_left)
+                if (KeyBindDown(Key.A) || l_left)
                 {
                     l_left = true;
                 }
-                if (Keyboard.IsKeyDown(Key.D))
+                if (KeyBindDown(Key.D))
                 {
                     sink.Update(InputFrame.ParseInputString("LX=" + (255 - walk_modifier)));
                     Console.WriteLine("L_RIGHT");
                 }
                 l_right = true;
             }
-            else if (Keyboard.IsKeyUp(Key.D) && l_right)
+            else if (!KeyBindDown(Key.D) && l_right)
             {
                 l_right = false;
 
-                if (Keyboard.IsKeyUp(Key.A))
+                if (!KeyBindDown(Key.A))
                     sink.Update(InputFrame.ParseInputString("LX=128"));
                 else
                     l_left = false;

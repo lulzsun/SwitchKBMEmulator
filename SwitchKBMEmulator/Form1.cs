@@ -33,6 +33,29 @@ namespace KBMSwitchAdapter
                 else if (c.GetType() == typeof(CheckBox))
                     (c as CheckBox).CheckedChanged += MCheckBox;
             }
+
+            //set up new handler events for controls in controller tab
+            foreach (Control c in joyPanel_lf.Controls) // left face buttons
+            {
+                if (c.GetType() == typeof(System.Windows.Forms.Button))
+                    (c as System.Windows.Forms.Button).Click += OpenKeyForm;
+            }
+            foreach (Control c in joyPanel_lt.Controls) // left shoulder buttons
+            {
+                if (c.GetType() == typeof(System.Windows.Forms.Button))
+                    (c as System.Windows.Forms.Button).Click += OpenKeyForm;
+            }
+            foreach (Control c in joyPanel_rf.Controls) // right face buttons
+            {
+                if (c.GetType() == typeof(System.Windows.Forms.Button))
+                    (c as System.Windows.Forms.Button).Click += OpenKeyForm;
+            }
+            foreach (Control c in joyPanel_rt.Controls) // right shoulder buttons
+            {
+                if (c.GetType() == typeof(System.Windows.Forms.Button))
+                    (c as System.Windows.Forms.Button).Click += OpenKeyForm;
+            }
+
             //misc
             foreach (Control c in Controls)
             {
@@ -247,6 +270,31 @@ namespace KBMSwitchAdapter
             }
         }
 
+        void OpenKeyForm(object sender, EventArgs e)
+        {
+            EditKeyForm dialog = new EditKeyForm();
+            DialogResult d = dialog.ShowDialog(this);
+
+            // Show testDialog as a modal dialog and determine if DialogResult = OK.
+            if (d == DialogResult.OK) //key press/click
+            {
+                Console.WriteLine(dialog.input);
+            }
+            else if (d == DialogResult.Yes) //mouse aim
+            {
+
+            }
+            else if (d == DialogResult.Retry) //movement
+            {
+
+            }
+            else
+            {
+
+            }
+            dialog.Dispose();
+        }
+
         void SaveLoadButton(object sender, EventArgs e)
         {
             System.Windows.Forms.Button button = sender as System.Windows.Forms.Button;
@@ -312,6 +360,40 @@ namespace KBMSwitchAdapter
         private void Timer3_Tick(object sender, EventArgs e)
         {
             controller.CircleTest(sink);
+        }
+
+        private void EditKeysButton_Click(object sender, EventArgs e)
+        {
+            if(editKeysButton.Text == "Edit Keybinds")
+            {
+                editKeysButton.Text = "Save Keybinds";
+            }
+            else if(editKeysButton.Text == "Save Keybinds")
+            {
+                editKeysButton.Text = "Edit Keybinds";
+            }
+
+            //hide/show buttons
+            foreach (Control c in joyPanel_lf.Controls) // left face buttons
+            {
+                if (c.GetType() == typeof(System.Windows.Forms.Button))
+                    (c as System.Windows.Forms.Button).Visible = !(c as System.Windows.Forms.Button).Visible;
+            }
+            foreach (Control c in joyPanel_lt.Controls) // left shoulder buttons
+            {
+                if (c.GetType() == typeof(System.Windows.Forms.Button))
+                    (c as System.Windows.Forms.Button).Visible = !(c as System.Windows.Forms.Button).Visible;
+            }
+            foreach (Control c in joyPanel_rf.Controls) // right face buttons
+            {
+                if (c.GetType() == typeof(System.Windows.Forms.Button))
+                    (c as System.Windows.Forms.Button).Visible = !(c as System.Windows.Forms.Button).Visible;
+            }
+            foreach (Control c in joyPanel_rt.Controls) // right shoulder buttons
+            {
+                if (c.GetType() == typeof(System.Windows.Forms.Button))
+                    (c as System.Windows.Forms.Button).Visible = !(c as System.Windows.Forms.Button).Visible;
+            }
         }
     }
 }

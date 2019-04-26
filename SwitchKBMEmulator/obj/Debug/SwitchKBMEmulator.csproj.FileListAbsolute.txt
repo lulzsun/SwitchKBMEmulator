@@ -18,3 +18,4 @@ C:\Users\QUACHROCKET\Documents\Visual Studio 2019\Projects\SwitchKBMEmulator\Swi
 C:\Users\QUACHROCKET\Documents\Visual Studio 2019\Projects\SwitchKBMEmulator\SwitchKBMEmulator\obj\Debug\SwitchKBMEmulator.csproj.CoreCompileInputs.cache
 C:\Users\QUACHROCKET\Documents\Visual Studio 2019\Projects\SwitchKBMEmulator\SwitchKBMEmulator\obj\Debug\SwitchKBMEmulator.exe
 C:\Users\QUACHROCKET\Documents\Visual Studio 2019\Projects\SwitchKBMEmulator\SwitchKBMEmulator\obj\Debug\SwitchKBMEmulator.pdb
+C:\Users\QUACHROCKET\Documents\Visual Studio 2019\Projects\SwitchKBMEmulator\SwitchKBMEmulator\obj\Debug\SwitchKBMEmulator.EditKeyForm.resources
