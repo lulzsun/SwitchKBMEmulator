@@ -146,6 +146,8 @@
             this.mTrackBarX2 = new SwitchKBMEmulator.NoFocusTrackBar();
             this.mTrackBarY1 = new SwitchKBMEmulator.NoFocusTrackBar();
             this.mTrackBarX1 = new SwitchKBMEmulator.NoFocusTrackBar();
+            this.button4 = new System.Windows.Forms.Button();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.joyPanel_rt.SuspendLayout();
@@ -233,6 +235,8 @@
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.SystemColors.Control;
+            this.tabPage1.Controls.Add(this.comboBox1);
+            this.tabPage1.Controls.Add(this.button4);
             this.tabPage1.Controls.Add(this.joyPanel_rt);
             this.tabPage1.Controls.Add(this.editKeysButton);
             this.tabPage1.Controls.Add(this.joyPanel_lt);
@@ -286,6 +290,7 @@
             this.editKeysButton.Name = "editKeysButton";
             this.editKeysButton.Size = new System.Drawing.Size(181, 23);
             this.editKeysButton.TabIndex = 7;
+            this.editKeysButton.TabStop = false;
             this.editKeysButton.Text = "Edit Keybinds";
             this.editKeysButton.UseVisualStyleBackColor = true;
             this.editKeysButton.Click += new System.EventHandler(this.EditKeysButton_Click);
@@ -1403,6 +1408,7 @@
             this.pComboBox.Name = "pComboBox";
             this.pComboBox.Size = new System.Drawing.Size(181, 21);
             this.pComboBox.TabIndex = 114;
+            this.pComboBox.TabStop = false;
             this.pComboBox.TextUpdate += new System.EventHandler(this.pComboBox_Update);
             // 
             // label31
@@ -1422,6 +1428,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(61, 23);
             this.button1.TabIndex = 116;
+            this.button1.TabStop = false;
             this.button1.Text = "Save";
             this.button1.UseVisualStyleBackColor = true;
             // 
@@ -1432,6 +1439,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(61, 23);
             this.button2.TabIndex = 117;
+            this.button2.TabStop = false;
             this.button2.Text = "Load";
             this.button2.UseVisualStyleBackColor = true;
             // 
@@ -1442,6 +1450,7 @@
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(61, 23);
             this.button3.TabIndex = 118;
+            this.button3.TabStop = false;
             this.button3.Text = "Delete";
             this.button3.UseVisualStyleBackColor = true;
             // 
@@ -1664,6 +1673,28 @@
             this.mTrackBarX1.TabIndex = 37;
             this.mTrackBarX1.TickStyle = System.Windows.Forms.TickStyle.None;
             // 
+            // button4
+            // 
+            this.button4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.button4.Location = new System.Drawing.Point(82, 443);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(75, 23);
+            this.button4.TabIndex = 16;
+            this.button4.Text = "Connect";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.Button4_Click);
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(5, 444);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(71, 21);
+            this.comboBox1.TabIndex = 17;
+            this.comboBox1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ComboBox1_Update);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1854,6 +1885,8 @@
         private System.Windows.Forms.Button b_Down;
         private System.Windows.Forms.Button b_Right;
         private System.Windows.Forms.Button b_Up;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Button button4;
     }
 }
 

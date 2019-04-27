@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.IO.Ports;
 using System.Threading;
+using System.Windows.Forms;
 
 namespace InputServer
 {
@@ -81,8 +82,12 @@ namespace InputServer
             _serialPort.Open();
             if (!Sync())
             {
-                throw new Exception("Unable to sync");
+                MessageBox.Show("Unable to sync with device.");
+                Console.WriteLine("Unable to sync");
+                Dispose();
+                return;
             }
+            MessageBox.Show("Synced!");
             Console.WriteLine("Synced");
 
             var newFrame = new InputFrame();
@@ -110,7 +115,10 @@ namespace InputServer
                     Console.Error.WriteLine("NACK");
                     if (!Sync())
                     {
-                        throw new Exception("Unable to sync after NACK");
+                        MessageBox.Show("Unable to sync after NACK.");
+                        Console.WriteLine("Unable to sync after NACK");
+                        Dispose();
+                        return;
                     }
                 }
                 else if (resp != 0x90)

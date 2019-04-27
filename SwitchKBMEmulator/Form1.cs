@@ -3,6 +3,7 @@ using SwitchKBMEmulator;
 using System;
 using System.Drawing;
 using System.IO;
+using System.IO.Ports;
 using System.Windows.Forms;
 using System.Windows.Input;
 
@@ -23,6 +24,18 @@ namespace KBMSwitchAdapter
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            //Initialize Controller
+            controller = new Controller();
+            string[] ports = SerialPort.GetPortNames();
+            foreach (string port in ports)
+            {
+                comboBox1.Items.Add(port);
+            }
+            if (comboBox1.Items.Count != 0)
+            {
+                comboBox1.SelectedIndex = 0;
+            }
+
             //set up new handler events for controls in mouse settings tab
             foreach (Control c in tabPage3.Controls)
             {
@@ -108,11 +121,11 @@ namespace KBMSwitchAdapter
                     mValueX10.Value = (decimal)settings.mc_delta_damping_sigmoid_constant.X;
                     mValueY10.Value = (decimal)settings.mc_delta_damping_sigmoid_constant.Y;
 
-                    saveProfile("Default");
+                    SaveProfile("Default");
                 }
                 pComboBox.Text = "Default";
             }
-            loadProfile(pComboBox.Text);
+            LoadProfile(pComboBox.Text);
 
             //load all profiles in \Profiles\
             string[] profiles = Directory.GetFiles(AppDomain.CurrentDomain.BaseDirectory + @"Profiles\", "*.profile");
@@ -122,11 +135,6 @@ namespace KBMSwitchAdapter
                 if(Path.GetFileNameWithoutExtension(profile) != "Default")
                     pComboBox.Items.Add(Path.GetFileNameWithoutExtension(profile));
             }
-
-            //Initialize Controller
-            controller = new Controller();
-            sink = new SwitchInputSink("COM8");
-            sink.Update(InputFrame.ParseInputString("P=8"));
         }
 
         private void Form1_Closing(object sender, FormClosingEventArgs e)
@@ -136,6 +144,7 @@ namespace KBMSwitchAdapter
 
         private void Panel1_MouseClick(object sender, System.Windows.Forms.MouseEventArgs e)
         {
+            panel1.Focus();
             //load current settings
             controller.mouseTranslation.mc_sensitivity.X = (double)mValueX1.Value;
             controller.mouseTranslation.mc_sensitivity.Y = (double)mValueX1.Value;
@@ -275,20 +284,26 @@ namespace KBMSwitchAdapter
             EditKeyForm dialog = new EditKeyForm();
             DialogResult d = dialog.ShowDialog(this);
 
+            System.Windows.Forms.Button button = sender as System.Windows.Forms.Button;
+            string id1 = button.Name.Substring(2);
+
             // Show testDialog as a modal dialog and determine if DialogResult = OK.
             if (d == DialogResult.OK) //key press/click
             {
-                Console.WriteLine(dialog.input);
+                if(dialog.mouseclick)
+                    button.Text = "M" + dialog.input.ToString();
+                else
+                    button.Text = dialog.input.ToString();
+
+                controller.UpdateBind(id1, dialog.input);
+
+                //Console.WriteLine(dialog.input + " " + id1);
             }
             else if (d == DialogResult.Yes) //mouse aim
             {
 
             }
             else if (d == DialogResult.Retry) //movement
-            {
-
-            }
-            else
             {
 
             }
@@ -300,12 +315,12 @@ namespace KBMSwitchAdapter
             System.Windows.Forms.Button button = sender as System.Windows.Forms.Button;
             if (button.Text == "Save")
             {
-                saveProfile(pComboBox.Text);
+                SaveProfile(pComboBox.Text);
                 pComboBox.Items.Add(pComboBox.Text);
             }
             else if (button.Text == "Load")
             {
-                loadProfile(pComboBox.Text);
+                LoadProfile(pComboBox.Text);
             }
             else if (button.Text == "Delete")
             {
@@ -315,9 +330,9 @@ namespace KBMSwitchAdapter
             }
         }
 
-        void saveProfile(string profileName)
+        void SaveProfile(string profileName)
         {
-            string[] lines = { mValueX1.Value + "," + mValueY1.Value,
+            string[] mouseSettings = { mValueX1.Value + "," + mValueY1.Value,
                                mValueX2.Value + "," + mValueY2.Value,
                                mValueX3.Value + "," + mValueY3.Value,
                                mValueX4.Value + "," + mValueY4.Value,
@@ -326,12 +341,31 @@ namespace KBMSwitchAdapter
                                mValueX7.Value + "," + mValueY7.Value,
                                mValueX8.Value + "," + mValueY8.Value,
                                mValueX9.Value + "," + mValueY9.Value,
-                               mValueX10.Value + "," + mValueY10.Value };
+                               mValueX10.Value + "," + mValueY10.Value};
 
-            File.WriteAllLines(AppDomain.CurrentDomain.BaseDirectory + @"Profiles\" + profileName + ".profile", lines);
+            string[] keySettings = new string[controller.buttons.Length];
+            int i = 0;
+            foreach (string butt in keySettings)
+            {
+                if (controller.GetBind(controller.buttons[i]).GetType().ToString() == "System.Windows.Input.Key")
+                {
+                    keySettings[i] = "K_" + KeyInterop.VirtualKeyFromKey((Key)controller.GetBind(controller.buttons[i])).ToString();
+                }
+                else if (controller.GetBind(controller.buttons[i]).GetType().ToString() == "System.Windows.Forms.MouseButtons")
+                {
+                    keySettings[i] = "M_" + controller.GetBind(controller.buttons[i]);
+                }
+                i++;
+            }
+
+            string[] combinedSettings = new string[mouseSettings.Length + keySettings.Length];
+            mouseSettings.CopyTo(combinedSettings, 0);
+            keySettings.CopyTo(combinedSettings, mouseSettings.Length);
+
+            File.WriteAllLines(AppDomain.CurrentDomain.BaseDirectory + @"Profiles\" + profileName + ".profile", combinedSettings);
         }
 
-        void loadProfile(string profileName)
+        void LoadProfile(string profileName)
         {
             if (File.Exists(AppDomain.CurrentDomain.BaseDirectory + @"Profiles\" + profileName + ".profile"))
             {
@@ -342,9 +376,34 @@ namespace KBMSwitchAdapter
                 {
                     if (line != null)
                     {
-                        string[] value = line.Split(',');
-                        (tabPage3.Controls["mValueX" + (id)] as NumericUpDown).Value = decimal.Parse(value[0]);
-                        (tabPage3.Controls["mValueY" + (id)] as NumericUpDown).Value = decimal.Parse(value[1]);
+                        if (id <= 10) //mouse settings
+                        {
+                            string[] value = line.Split(',');
+                            (tabPage3.Controls["mValueX" + (id)] as NumericUpDown).Value = decimal.Parse(value[0]);
+                            (tabPage3.Controls["mValueY" + (id)] as NumericUpDown).Value = decimal.Parse(value[1]);
+                        }else if (id > 10) //keybindings
+                        {
+                            string[] value = line.Split('_');
+                            int new_id = id - 11;
+                            if (value[0] == "K")
+                            {
+                                controller.UpdateBind(controller.buttons[new_id], KeyInterop.KeyFromVirtualKey(Int32.Parse(value[1])));
+                                System.Windows.Forms.Button butter = Controls.Find("b_" + controller.buttons[new_id], true)[0] as System.Windows.Forms.Button;
+                                butter.Text = KeyInterop.KeyFromVirtualKey(Int32.Parse(value[1])).ToString();
+                            }
+                            else if (value[0] == ("M"))
+                            {
+                                if (line[1].Equals("Left"))
+                                    controller.UpdateBind(controller.buttons[new_id], MouseButton.Left);
+                                else if (line[1].Equals("Right"))
+                                    controller.UpdateBind(controller.buttons[new_id], MouseButton.Right);
+                                else if (line[1].Equals("Middle"))
+                                    controller.UpdateBind(controller.buttons[new_id], MouseButton.Middle);
+
+                                System.Windows.Forms.Button butter = Controls.Find("b_" + controller.buttons[new_id], true)[0] as System.Windows.Forms.Button;
+                                butter.Text = "M" + value[1];
+                            }
+                        }
                         id++;
                     }
                 }
@@ -394,6 +453,26 @@ namespace KBMSwitchAdapter
                 if (c.GetType() == typeof(System.Windows.Forms.Button))
                     (c as System.Windows.Forms.Button).Visible = !(c as System.Windows.Forms.Button).Visible;
             }
+        }
+        private void ComboBox1_Update(object sender, System.Windows.Forms.MouseEventArgs e)
+        {
+            comboBox1.Items.Clear();
+            string[] ports = SerialPort.GetPortNames();
+
+            foreach(string port in ports)
+            {
+                comboBox1.Items.Add(port);
+            }
+            if(comboBox1.Items.Count != 0)
+            {
+                comboBox1.SelectedIndex = 0;
+            }
+        }
+
+        private void Button4_Click(object sender, EventArgs e)
+        {
+            sink = new SwitchInputSink(comboBox1.SelectedItem.ToString());
+            sink.Update(InputFrame.ParseInputString("P=8"));
         }
     }
 }

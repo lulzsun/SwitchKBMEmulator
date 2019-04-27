@@ -1,0 +1,11 @@
+C:\Users\QUACHROCKET\Documents\Visual Studio 2019\Projects\SwitchKBMEmulator\SwitchKBMEmulator\bin\Release\SwitchKBMEmulator.exe.config
+C:\Users\QUACHROCKET\Documents\Visual Studio 2019\Projects\SwitchKBMEmulator\SwitchKBMEmulator\bin\Release\SwitchKBMEmulator.exe
+C:\Users\QUACHROCKET\Documents\Visual Studio 2019\Projects\SwitchKBMEmulator\SwitchKBMEmulator\bin\Release\SwitchKBMEmulator.pdb
+C:\Users\QUACHROCKET\Documents\Visual Studio 2019\Projects\SwitchKBMEmulator\SwitchKBMEmulator\obj\Release\SwitchKBMEmulator.csprojAssemblyReference.cache
+C:\Users\QUACHROCKET\Documents\Visual Studio 2019\Projects\SwitchKBMEmulator\SwitchKBMEmulator\obj\Release\SwitchKBMEmulator.EditKeyForm.resources
+C:\Users\QUACHROCKET\Documents\Visual Studio 2019\Projects\SwitchKBMEmulator\SwitchKBMEmulator\obj\Release\KBMSwitchAdapter.Form1.resources
+C:\Users\QUACHROCKET\Documents\Visual Studio 2019\Projects\SwitchKBMEmulator\SwitchKBMEmulator\obj\Release\SwitchKBMEmulator.Properties.Resources.resources
+C:\Users\QUACHROCKET\Documents\Visual Studio 2019\Projects\SwitchKBMEmulator\SwitchKBMEmulator\obj\Release\SwitchKBMEmulator.csproj.GenerateResource.cache
+C:\Users\QUACHROCKET\Documents\Visual Studio 2019\Projects\SwitchKBMEmulator\SwitchKBMEmulator\obj\Release\SwitchKBMEmulator.csproj.CoreCompileInputs.cache
+C:\Users\QUACHROCKET\Documents\Visual Studio 2019\Projects\SwitchKBMEmulator\SwitchKBMEmulator\obj\Release\SwitchKBMEmulator.exe
+C:\Users\QUACHROCKET\Documents\Visual Studio 2019\Projects\SwitchKBMEmulator\SwitchKBMEmulator\obj\Release\SwitchKBMEmulator.pdb

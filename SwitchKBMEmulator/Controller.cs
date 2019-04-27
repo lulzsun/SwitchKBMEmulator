@@ -10,6 +10,11 @@ namespace SwitchKBMEmulator
 {
     class Controller
     {
+        public readonly string[] buttons = { "Y", "B", "A", "X",
+                                "Up", "Down", "Left", "Right",
+                                "L", "R", "ZL", "ZR",
+                                "Minus", "Plus", "L3", "R3",
+                                "Home", "Share" };
         public struct None
         {
             public const int ID = 0;
@@ -18,7 +23,7 @@ namespace SwitchKBMEmulator
         public class Y
         {
             public const int ID = 1;
-            public static Key bind = Key.Y;
+            public static Object bind = Key.Y;
             public static bool pressed = false;
         };
         public class B
@@ -78,13 +83,13 @@ namespace SwitchKBMEmulator
         public class ZL
         {
             public const int ID = 64;
-            public static Object bind = MouseButtons.Left;
+            public static Object bind = Key.LeftShift;
             public static bool pressed = false;
         };
         public class ZR
         {
             public const int ID = 128;
-            public static Object bind = Key.End;
+            public static Object bind = MouseButtons.Left;
             public static bool pressed = false;
         };
         public class Minus
@@ -103,12 +108,16 @@ namespace SwitchKBMEmulator
         {
             public const int ID = 1024;
             public static Object bind = Key.C;
+            public static bool mouseaim = false;
+            public static bool movement = true;
             public static bool pressed = false;
         };
         public class R3
         {
             public const int ID = 2048;
             public static Object bind = Key.Z;
+            public static bool mouseaim = true;
+            public static bool movement = false;
             public static bool pressed = false;
         };
         public class Home
@@ -272,6 +281,121 @@ namespace SwitchKBMEmulator
             return false;
         }
 
+        public Object GetBind(string button)
+        {
+            switch (button)
+            {
+                case "Y":
+                    return Y.bind;
+                case "B":
+                    return B.bind;
+                case "A":
+                    return A.bind;
+                case "X":
+                    return X.bind;
+                case "Up":
+                    return Up.bind;
+                case "Down":
+                    return Down.bind;
+                case "Left":
+                    return Left.bind;
+                case "Right":
+                    return Right.bind;
+                case "L":
+                    return L.bind;
+                case "R":
+                    return R.bind;
+                case "ZL":
+                    return ZL.bind;
+                case "ZR":
+                    return ZR.bind;
+                case "Minus":
+                    return Minus.bind;
+                case "Plus":
+                    return Plus.bind;
+                case "L3":
+                    return L3.bind;
+                case "R3":
+                    return R3.bind;
+                case "Home":
+                    return Home.bind;
+                case "Share":
+                    return Share.bind;
+            }
+            return "WHAT THE FUCK: "+ button;
+        }
+        
+        public void UpdateBind(string button, Object input)
+        {
+            switch (button)
+            {
+                case "Y":
+                    Y.bind = input;
+                    break;
+                case "B":
+                    B.bind = input;
+                    break;
+                case "A":
+                    A.bind = input;
+                    break;
+                case "X":
+                    X.bind = input;
+                    break;
+                case "Up":
+                    Up.bind = input;
+                    break;
+                case "Down":
+                    Down.bind = input;
+                    break;
+                case "Left":
+                    Left.bind = input;
+                    break;
+                case "Right":
+                    Right.bind = input;
+                    break;
+                case "L":
+                    L.bind = input;
+                    break;
+                case "R":
+                    R.bind = input;
+                    break;
+                case "ZL":
+                    ZL.bind = input;
+                    break;
+                case "ZR":
+                    ZR.bind = input;
+                    break;
+                case "Minus":
+                    Minus.bind = input;
+                    break;
+                case "Plus":
+                    Plus.bind = input;
+                    break;
+                case "L3":
+                    if (input.ToString().Equals("mouseaim"))
+                        L3.mouseaim = !L3.mouseaim;
+                    else if (input.ToString().Equals("movement"))
+                        L3.movement = !L3.movement;
+                    else
+                        L3.bind = input;
+                    break;
+                case "R3":
+                    if (input.ToString().Equals("mouseaim"))
+                        R3.mouseaim = !R3.mouseaim;
+                    else if (input.ToString().Equals("movement"))
+                        R3.movement = !R3.movement;
+                    else
+                        R3.bind = input;
+                    break;
+                case "Home":
+                    Home.bind = input;
+                    break;
+                case "Share":
+                    Share.bind = input;
+                    break;
+            }
+        }
+
         bool l_left, l_right, l_up, l_down, walk;
         int walk_modifier = 0;
         public void KeyBoardUpdate(SwitchInputSink sink)
@@ -281,9 +405,9 @@ namespace SwitchKBMEmulator
             {
                 if (!Y.pressed)
                 {
-                    sink.Update(InputFrame.ParseInputString("P=" + A.ID));
+                    sink.Update(InputFrame.ParseInputString("P=" + Y.ID));
                     Y.pressed = true;
-                    Console.WriteLine("A");
+                    Console.WriteLine("Y");
                 }
             }
             else if (!KeyBindDown(Y.bind) && Y.pressed)
@@ -434,6 +558,38 @@ namespace SwitchKBMEmulator
             {
                 R3.pressed = false;
                 sink.Update(InputFrame.ParseInputString("R=" + R3.ID));
+            }
+
+            //--------------- Minus BUTTON ---------------
+            if (KeyBindDown(Minus.bind))
+            {
+                if (!Minus.pressed)
+                {
+                    sink.Update(InputFrame.ParseInputString("P=" + Minus.ID));
+                    Minus.pressed = true;
+                    Console.WriteLine("MINUS");
+                }
+            }
+            else if (!KeyBindDown(Minus.bind) && Minus.pressed)
+            {
+                Minus.pressed = false;
+                sink.Update(InputFrame.ParseInputString("R=" + Minus.ID));
+            }
+
+            //--------------- Plus BUTTON ---------------
+            if (KeyBindDown(Plus.bind))
+            {
+                if (!Plus.pressed)
+                {
+                    sink.Update(InputFrame.ParseInputString("P=" + Plus.ID));
+                    Plus.pressed = true;
+                    Console.WriteLine("PLUS");
+                }
+            }
+            else if (!KeyBindDown(Plus.bind) && Plus.pressed)
+            {
+                Plus.pressed = false;
+                sink.Update(InputFrame.ParseInputString("R=" + Plus.ID));
             }
 
             //--------------- HOME BUTTON ---------------

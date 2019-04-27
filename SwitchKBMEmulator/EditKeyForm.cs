@@ -7,6 +7,7 @@ namespace SwitchKBMEmulator
     public partial class EditKeyForm : Form
     {
         public Object input;
+        public bool mouseclick = false;
         public EditKeyForm()
         {
             InitializeComponent();
@@ -27,6 +28,7 @@ namespace SwitchKBMEmulator
         {
             button1.Enabled = true;
             input = e.Button;
+            mouseclick = true;
             inputBox.Text = "Mouse Click " + input;
         }
     }
